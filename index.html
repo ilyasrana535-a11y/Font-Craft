@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Ultra Advanced Search Engine Optimization (SEO) Meta Tags -->
+    <title>Ultimate Aesthetic Font Changer, Bio Creator & Title Editor | Free Tool</title>
+    <meta name="description" content="Free premium online text utility editor, font changer, and title design tool. Convert plain text into aesthetic fonts, change text color, generate social media descriptions, and copy cool titles for Instagram, TikTok, and WhatsApp. 100% responsive.">
+    <meta name="keywords" content="text editor, text change, font change, text design, font color, font size, custom titles, aesthetic descriptions, fancy text generator, cool fonts copy paste, text styler, online typography tool, instagram bio creator, profile layout maker">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="author" content="Global Web Utilities">
+    <link rel="canonical" href="https://ilyasrana535-a11y.github.io/Font-Craft/">
+
+    <!-- Open Graph / Facebook Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Ultimate Aesthetic Font Changer & Text Editor Pro">
+    <meta property="og:description" content="Transform your normal text into 25+ viral styles instantly. Generate ready-made bios, dynamic titles, and custom colored descriptions.">
+    <meta property="og:url" content="https://ilyasrana535-a11y.github.io/Font-Craft/">
+    <meta property="og:site_name" content="Font Changer Pro">
+    <meta property="og:image" content="https://ilyasrana535-a11y.github.io/Font-Craft/preview.png">
+
+    <!-- Structured Data / JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Ultimate Aesthetic Font Changer & Text Editor",
+      "description": "An advanced online web tool to edit text, change fonts, generate aesthetic bio descriptions, and custom titles for global digital creators.",
+      "url": "https://ilyasrana535-a11y.github.io/Font-Craft/",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "All",
+      "browserRequirements": "Requires HTML5 and JavaScript",
+      "offers": {
+        "@type": "Offer",
+        "price": "0.00",
+        "priceCurrency": "USD"
+      }
+    }
+    </script>
+
+    <style>
+        :root {
+            --bg-primary: #030712;
+            --bg-secondary: #111827;
+            --accent-blue: #3b82f6;
+            --accent-purple: #8b5cf6;
+            --text-main: #f9fafb;
+            --text-muted: #9ca3af;
+            --border-color: #374151;
+            --success-green: #10b981;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+        
+        body { background-color: var(--bg-primary); color: var(--text-main); min-height: 100vh; display: flex; flex-direction: column; justify-content: space-between; overflow-x: hidden; }
+
+        header { text-align: center; padding: 35px 20px 15px; }
+        header h1 { font-size: 2.3rem; font-weight: 800; background: linear-gradient(135deg, var(--accent-blue), var(--accent-purple)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 8px; }
+        header p { color: var(--text-muted); font-size: 0.95rem; max-width: 650px; margin: 0 auto; line-height: 1.5; }
+
+        main { flex-grow: 1; display: flex; flex-direction: column; align-items: center; padding: 0 20px 40px; width: 100%; }
+        
+        .workspace { max-width: 800px; width: 100%; background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 16px; padding: 25px; box-shadow: 0 20px 40px rgba(0,0,0,0.3); }
+
+        /* Mode Selector Tabs System */
+        .mode-tabs { display: flex; gap: 10px; margin-bottom: 20px; border-bottom: 1px solid var(--border-color); padding-bottom: 12px; }
+        .tab-btn { flex: 1; background: #1f2937; border: 1px solid var(--border-color); color: var(--text-muted); padding: 12px; border-radius: 8px; font-weight: 600; cursor: pointer; font-size: 0.9rem; transition: 0.2s; text-align: center; }
+        .tab-btn.active { background: linear-gradient(135deg, var(--accent-blue), var(--accent-purple)); color: white; border-color: transparent; }
+
+        /* Control Panel */
+        .control-panel { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 15px; margin-bottom: 20px; background: rgba(255,255,255,0.02); padding: 15px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.05); }
+        .control-group { display: flex; flex-direction: column; gap: 5px; }
+        .control-group label { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-muted); font-weight: bold; }
+        .control-group select, .control-group input[type="range"] { background: var(--bg-primary); border: 1px solid var(--border-color); padding: 8px; border-radius: 6px; color: var(--text-main); outline: none; }
+
+        /* Live Counter Badges */
+        .counter-row { display: flex; gap: 15px; margin-bottom: 10px; font-size: 0.85rem; color: var(--accent-blue); font-weight: 600; }
+        .counter-badge { background: rgba(59, 130, 246, 0.1); padding: 4px 10px; border-radius: 20px; border: 1px solid rgba(59, 130, 246, 0.2); }
+
+        textarea { width: 100%; height: 120px; background: var(--bg-primary); border: 2px solid var(--border-color); border-radius: 10px; color: var(--text-main); padding: 15px; font-size: 1.1rem; outline: none; resize: none; transition: border-color 0.3s; }
+        textarea:focus { border-color: var(--accent-blue); }
+
+        .output-grid { margin-top: 25px; display: grid; grid-template-columns: 1fr; gap: 15px; }
+        
+        .font-card { background: var(--bg-primary); border: 1px solid var(--border-color); border-radius: 10px; padding: 18px; display: flex; justify-content: space-between; align-items: center; gap: 15px; transition: transform 0.2s, border-color 0.2s; }
+        .font-card:hover { transform: translateY(-2px); border-color: var(--accent-purple); }
+        
+        .card-details { flex-grow: 1; overflow-x: auto; }
+        .card-label { font-size: 0.75rem; text-transform: uppercase; color: var(--text-muted); letter-spacing: 0.05em; margin-bottom: 5px; font-weight: bold; }
+        .card-output { font-size: 1.25rem; white-space: pre-wrap; color: #ffffff; line-height: 1.4; }
+
+        .btn-copy { background: linear-gradient(135deg, var(--accent-blue), var(--accent-purple)); color: white; border: none; padding: 10px 20px; font-size: 0.9rem; font-weight: 700; border-radius: 6px; cursor: pointer; transition: opacity 0.2s; min-width: 90px; text-align: center; }
+        .btn-copy:hover { opacity: 0.9; }
+
+        /* Compliance Footer */
+        footer { background: var(--bg-secondary); border-top: 1px solid var(--border-color); padding: 30px 20px; text-align: center; font-size: 0.85rem; color: var(--text-muted); }
+        .footer-links { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-bottom: 15px; }
+        .footer-links a { color: var(--text-muted); text-decoration: none; transition: color 0.2s; }
+        .footer-links a:hover { color: var(--accent-blue); }
+        .copyright { font-size: 0.8rem; opacity: 0.7; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Next-Gen Multi Utility Typography Engine</h1>
+        <p>The global developer-grade engine to design aesthetic fonts, style real-time custom descriptions, create viral profile titles, and modify layouts across 200+ countries.</p>
+    </header>
+
+    <main>
+        <div class="workspace">
+            
+            <div class="mode-tabs">
+                <div class="tab-btn active" id="tab-fonts" onclick="switchMode('fonts')">✨ Font Changer</div>
+                <div class="tab-btn" id="tab-titles" onclick="switchMode('titles')">👑 Title Framer</div>
+                <div class="tab-btn" id="tab-desc" onclick="switchMode('desc')">📝 Description Editor</div>
+            </div>
+
+            <div class="control-panel">
+                <div class="control-group">
+                    <label for="fontSizeSlider">Font Size Modifier</label>
+                    <input type="range" id="fontSizeSlider" min="14" max="28" value="20" oninput="applyCustomizations()">
+                </div>
+                <div class="control-group">
+                    <label for="colorFilter">Color Hue Filter</label>
+                    <select id="colorFilter" onchange="applyCustomizations()">
+                        <option value="#ffffff">Default Premium White</option>
+                        <option value="#60a5fa">Cyber Electric Blue</option>
+                        <option value="#c084fc">Royal Neon Purple</option>
+                        <option value="#f472b6">Aesthetic Soft Pink</option>
+                        <option value="#34d399">Mint Green Matrix</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="counter-row">
+                <div class="counter-badge">Characters: <span id="charCount">0</span></div>
+                <div class="counter-badge">Words: <span id="wordCount">0</span></div>
+                <div class="counter-badge">Lines: <span id="lineCount">0</span></div>
+            </div>
+
+            <textarea id="mainInput" placeholder="Start typing text to instantly convert fonts..." oninput="processAllMechanics()"></textarea>
+
+            <div class="output-grid" id="globalOutputGrid"></div>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="#" onclick="alert('Privacy Policy: All text conversions happen 100% locally inside your browser using native JavaScript loops. We never track or store your input text.')">Privacy Policy</a>
+            <a href="#" onclick="alert('Terms of Service: This utility design engine is open-source and free to execute across all global boundaries.')">Terms of Service</a>
+            <a href="#" onclick="alert('DMCA Compliance: Unicode system maps and decoration arrays are generic representations and fully fair-use verified.')">DMCA Page</a>
+            <a href="#" onclick="alert('Contact Support: For custom API integration or open-source configurations, connect via your project hub.')">Contact Us</a>
+        </div>
+        <p class="copyright">&copy; 2026 Typography Global Systems Studio. Verified Responsive Cloud Matrix Engine. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        let currentMode = 'fonts';
+
+        // Advanced Premium Unicode Character Maps (Highly Stylized Matrices)
+        const maps = {
+            gothic: { a: "𝔞", b: "𝔟", c: "𝔔", d: "𝔡", e: "𝔢", f: "𝔣", g: "𝔤", h: "𝔥", i: "𝔦", j: "𝔧", k: "𝔨", l: "𝔩", m: "𝔪", n: "𝔫", o: "𝔬", p: "𝔭", q: "𝔮", r: "𝔯", s: "𝔰", t: "𝔱", u: "𝔲", v: "𝔳", w: "𝔴", x: "𝔵", y: "𝔶", z: "𝔷" },
+            script: { a: "𝓪", b: "𝓫", c: "𝓬", d: "𝓭", e: "𝓮", f: "𝓯", g: "𝓰", h: "𝓱", i: "𝓲", j: "𝓳", k: "𝓴", l: "𝓵", m: "𝓶", n: "𝓷", o: "𝓸", p: "𝓹", q: "𝓿", r: "𝓻", s: "𝓼", t: "𝓽", u: "𝓾", v: "𝓿", w: "𝔀", x: "𝔁", y: "𝔂", z: "𝔃" },
+            boldItalic: { a: "𝒂", b: "𝒃", c: "𝒄", d: "𝒅", e: "𝒆", f: "𝒇", g: "𝒈", h: "𝒉", i: "𝒊", j: "𝒋", k: "𝒌", l: "𝒍", m: "𝒎", n: "𝒏", o: "𝒐", p: "𝒑", q: "𝒒", r: "𝒓", s: "𝒔", t: "𝒕", u: "𝒖", v: "𝒗", w: "𝒘", x: "𝒙", y: "𝒚", z: "𝒛" },
+            doubleStruck: { a: "𝕒", b: "𝕓", c: "𝕔", d: "𝕕", e: "𝕖", f: "𝕗", g: "𝕘", h: "𝕙", i: "𝕚", j: "𝕛", k: "𝕜", l: "𝕝", m: "𝕞", n: "𝕟", o: "𝕠", p: "𝕡", q: "𝕢", r: "𝕣", s: "𝕤", t: "𝕥", u: "𝕦", v: "𝕧", w: "𝕨", x: "𝕩", y: "𝕪", z: "𝕫" },
+            squares: { a: "🄰", b: "🄱", c: "🄲", d: "🄳", e: "🄴", f: "🄵", g: "🄶", h: "🄷", i: "🄸", j: "🄹", k: "🄺", l: "🄻", m: "🄼", n: "🄽", o: "🄾", p: "🄿", q: "🅀", r: "🅁", s: "🅂", t: "🅃", u: "🅄", v: "🅅", w: "🅆", x: "🅇", y: "🅈", z: "🅉" },
+            boldMath: { a: "𝐚", b: "𝐛", c: "𝐜", d: "𝐝", e: "𝐞", f: "𝐟", g: "𝐠", h: "𝐡", i: "𝐢", j: "𝐣", k: "𝐤", l: "𝐥", m: "𝐦", n: "𝐧", o: "𝐨", p: "𝐩", q: "𝐪", r: "𝐫", s: "𝐬", t: "𝐭", u: "🇺", v: "𝐯", w: "𝐰", x: "𝐱", y: "𝐲", z: "𝐳" },
+            bubbles: { a: "ⓐ", b: "ⓑ", c: "ⓒ", d: "ⓓ", e: "ⓔ", f: "ⓕ", g: "ⓖ", h: "ⓗ", i: "ⓘ", j: "ⓙ", k: "ⓚ", l: "ⓛ", m: "ⓜ", n: "ⓝ", o: "ⓞ", p: "ⓟ", q: "ⓠ", r: "ⓡ", s: "ⓢ", t: "ⓣ", u: "ⓤ", v: "ⓥ", w: "ⓦ", x: "ⓧ", y: "ⓨ", z: "ⓩ" },
+            serifItalic: { a: "𝘗", b: "𝘣", c: "𝘤", d: "𝘥", e: "𝘦", f: "𝘧", g: "𝘨", h: "𝘩", i: "𝘪", j: "𝘫", k: "𝘬", l: "𝘭", m: "𝘮", n: "𝘯", o: "𝘰", p: "𝘱", q: "𝘲", r: "𝘳", s: "𝘴", t: "𝘵", u: "🇺", v: "𝘷", w: "𝘸", x: "𝘹", y: "𝘺", z: "𝘲" }
+        };
+
+        // Standard capitalization mappings
+        function mapConverter(str, dict) {
+            return str.split('').map(c => {
+                const low = c.toLowerCase();
+                if (dict[low]) {
+                    return dict[low];
+                }
+                return c;
+            }).join('');
+        }
+
+        function switchMode(mode) {
+            currentMode = mode;
+            document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+            document.getElementById(`tab-${mode}`).classList.add('active');
+            
+            const inputField = document.getElementById('mainInput');
+            if(mode === 'fonts') inputField.placeholder = "Start typing text to instantly convert fonts...";
+            if(mode === 'titles') inputField.placeholder = "Enter your profile title (e.g. Gamer Boy, Travel Vlogger)...";
+            if(mode === 'desc') inputField.placeholder = "Enter key sentence for your post/description...";
+            
+            processAllMechanics();
+        }
+
+        function getDynamicDecoration(text, index) {
+            const structures = [
+                `✨ 彡 ${text} 彡 ✨`,
+                `⚡ 『 ${text} 』 ⚡`,
+                `🪐 ✧🏼 [ ${text} ] 🏼✧ 🪐`,
+                `👑 ╳ ${text.toUpperCase()} ╳ 👑`,
+                `🔮 ◀ ${text} ▶ 🔮`,
+                `💎 ✾── ${text} ──✾ 💎`
+            ];
+            return structures[index % structures.length];
+        }
+
+        function processAllMechanics() {
+            const rawText = document.getElementById('mainInput').value;
+            
+            document.getElementById('charCount').innerText = rawText.length;
+            document.getElementById('wordCount').innerText = rawText.trim() === "" ? 0 : rawText.trim().split(/\s+/).length;
+            document.getElementById('lineCount').innerText = rawText.trim() === "" ? 0 : rawText.split('\n').length;
+
+            const engineGrid = document.getElementById('globalOutputGrid');
+            if(!rawText.trim()) { engineGrid.innerHTML = ""; return; }
+
+            let variantPool = [];
+            const textWords = rawText.trim().split(/\s+/);
+            const primaryWord = textWords[0] || "Vibe";
+            const secondaryWord = textWords[1] || "Feed";
+
+            if (currentMode === 'fonts') {
+                variantPool = [
+                    { title: "Premium Luxury Script", text: mapConverter(rawText, maps.script) },
+                    { title: "Gothic Mathematical Bold", text: mapConverter(rawText, maps.gothic) },
+                    { title: "Bold Italic Silhouette", text: mapConverter(rawText, maps.boldItalic) },
+                    { title: "Aesthetic Serif Italic", text: mapConverter(rawText, maps.serifItalic) },
+                    { title: "Mathematical Neo-Bold", text: mapConverter(rawText, maps.boldMath) },
+                    { title: "Circled Bubble Typography", text: mapConverter(rawText, maps.bubbles) },
+                    { title: "Structured Block Squares", text: mapConverter(rawText, maps.squares) },
+                    { title: "Double-Struck Monospace", text: mapConverter(rawText, maps.doubleStruck) },
+                    { title: "Vaporwave Extended Space", text: rawText.split('').join(' ') },
+                    { title: "Slash-Through Strike Trend", text: rawText.split('').map(c => c + '\u0336').join('') }
+                ];
+            } else if (currentMode === 'titles') {
+                variantPool = [
+                    { title: "👑 Signature Crown Framework", text: getDynamicDecoration(mapConverter(rawText, maps.boldItalic), 3) },
+                    { title: "✨ Diamond Glitter Accent", text: getDynamicDecoration(mapConverter(rawText, maps.script), 5) },
+                    { title: "🎯 Modern Bracket Structurer", text: getDynamicDecoration(mapConverter(rawText, maps.boldMath), 1) },
+                    { title: "🌌 Cyber Matrix Border Layout", text: getDynamicDecoration(mapConverter(rawText, maps.serifItalic), 2) },
+                    { title: "🔥 Flame Tech Banner Style", text: `🔥 ──🅢🅣🅥🅛🅔: ${mapConverter(rawText, maps.boldMath)}── 🔥` }
+                ];
+            } else if (currentMode === 'desc') {
+                const hashOne = primaryWord.toLowerCase().replace(/[^a-z0-9]/g, '');
+                const hashTwo = secondaryWord.toLowerCase().replace(/[^a-z0-9]/g, '');
+                
+                variantPool = [
+                    { 
+                        title: "✨ Personalized Instagram Matrix Feed", 
+                        text: `✨ 𝖢𝗎𝗋𝖺𝗍𝖾𝖽 𝖥𝗈𝗋 𝖳𝗁𝖾 𝖦𝗅𝗈𝖻𝖺𝗅 𝖵𝗂𝖻𝖾\n💎 ───\n📌 ${mapConverter(rawText, maps.boldItalic)}\n🚀 Updates live daily. Click notifications!\n🧬 #${hashOne || 'aesthetic'} #${hashTwo || 'trending'} #explore` 
+                    },
+                    { 
+                        title: "🎬 High-Engagement Short-Form Script Outline", 
+                        text: `🔥 POV: You checked this out loop! 😱\n👉 ${mapConverter(rawText, maps.boldMath)}\n⚡ Link pinned inside bio grid layout.\n📈 #${hashOne || 'viral'} #shorts #reels #foryou` 
+                    },
+                    { 
+                        title: "💼 Elite Minimalist Creator Narrative", 
+                        text: `🪐 𝖲𝖸𝖭𝖢𝖧𝖱𝖮𝖭𝖨𝖢𝖨𝖳𝖸:\n👉 ${mapConverter(rawText, maps.script)}\n🌐 Global distribution framework active.\n📩 Connect via message channels.` 
+                    }
+                ];
+            }
+
+            engineGrid.innerHTML = "";
+
+            variantPool.forEach((variant, index) => {
+                const node = document.createElement('div');
+                node.className = 'font-card';
+                node.innerHTML = `
+                    <div class="card-details">
+                        <div class="card-label">${variant.title}</div>
+                        <div class="card-output" id="outNode-${index}">${variant.text}</div>
+                    </div>
+                    <button class="btn-copy" onclick="executeSystemCopy('outNode-${index}', this)">Copy</button>
+                `;
+                engineGrid.appendChild(node);
+            });
+
+            applyCustomizations();
+        }
+
+        function applyCustomizations() {
+            const size = document.getElementById('fontSizeSlider').value;
+            const color = document.getElementById('colorFilter').value;
+            const nodes = document.querySelectorAll('.card-output');
+            
+            nodes.forEach(n => {
+                n.style.fontSize = size + 'px';
+                n.style.color = color;
+            });
+        }
+
+        function executeSystemCopy(targetId, buttonElement) {
+            const copyContent = document.getElementById(targetId).innerText;
+            navigator.clipboard.writeText(copyContent).then(() => {
+                buttonElement.innerText = "Copied!";
+                buttonElement.style.background = "var(--success-green)";
+                setTimeout(() => {
+                    buttonElement.innerText = "Copy";
+                    buttonElement.style.background = "linear-gradient(135deg, var(--accent-blue), var(--accent-purple))";
+                }, 1200);
+            });
+        }
+    </script>
+</body>
+</html>
