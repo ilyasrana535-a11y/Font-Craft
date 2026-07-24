@@ -9,7 +9,7 @@
     <meta name="description" content="Free premium online text utility editor, font changer, and title design tool. Convert plain text into aesthetic fonts, change text color, generate social media descriptions, and copy cool titles for Instagram, TikTok, and WhatsApp. 100% responsive.">
     <meta name="keywords" content="text editor, text change, font change, text design, font color, font size, custom titles, aesthetic descriptions, fancy text generator, cool fonts copy paste, text styler, online typography tool, instagram bio creator, profile layout maker">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-    <meta name="author" content="Global Web Utilities">
+    <meta name="author" content="Waqas Tech Finds">
     <meta name="google-site-verification" content="mmMsjXoa2ZiXOkNf5_aUwYj0y1a6AmqHVR2l5jrzixA" />
     <link rel="canonical" href="https://ilyasrana535-a11y.github.io/Font-Craft/">
 
@@ -110,17 +110,42 @@
         .seo-faq-item { background: var(--bg-primary); border: 1px solid var(--border-color); border-radius: 8px; padding: 15px; margin-bottom: 12px; }
         .seo-faq-q { font-size: 1rem; font-weight: 600; color: #ffffff; margin-bottom: 6px; display: flex; align-items: center; gap: 8px; }
         .seo-faq-a { color: var(--text-muted); font-size: 0.9rem; line-height: 1.5; }
+
+        /* ==========================================
+           SIDEBAR NAVIGATION (ADDED SAFELY)
+           ========================================== */
+        .sidebar-toggle { position: fixed; top: 15px; left: 15px; z-index: 1001; background: var(--bg-secondary); border: 1px solid var(--border-color); color: var(--text-main); width: 44px; height: 44px; border-radius: 8px; cursor: pointer; font-size: 1.3rem; display: flex; align-items: center; justify-content: center; }
+        .sidebar-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.6); z-index: 999; display: none; }
+        .sidebar-overlay.open { display: block; }
+        .sidebar { position: fixed; top: 0; left: -260px; width: 240px; height: 100%; background: var(--bg-secondary); border-right: 1px solid var(--border-color); z-index: 1000; padding: 70px 20px 20px; transition: left 0.3s ease; overflow-y: auto; }
+        .sidebar.open { left: 0; }
+        .sidebar h3 { color: var(--text-muted); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 10px; }
+        .sidebar a { display: block; color: var(--text-muted); text-decoration: none; padding: 10px 0; font-size: 0.95rem; border-bottom: 1px solid rgba(255,255,255,0.05); }
+        .sidebar a:hover { color: var(--accent-blue); }
     </style>
 </head>
 <body>
 
+    <button class="sidebar-toggle" onclick="toggleSidebar()" aria-label="Open menu">☰</button>
+    <div class="sidebar-overlay" id="sideOverlay" onclick="toggleSidebar()"></div>
+    <nav class="sidebar" id="sideNav">
+        <h3>Navigate</h3>
+        <a href="#tool" onclick="toggleSidebar()">✨ Font Changer Tool</a>
+        <a href="#about" onclick="toggleSidebar()">📖 About This Tool</a>
+        <a href="#faq" onclick="toggleSidebar()">❓ FAQs</a>
+        <h3 style="margin-top:20px;">Legal</h3>
+        <a href="privacy.html">🔒 Privacy Policy</a>
+        <a href="terms.html">📄 Terms of Service</a>
+        <a href="dmca.html">⚖️ DMCA</a>
+    </nav>
+
     <header>
         <h1>Next-Gen Multi Utility Typography Engine</h1>
-        <p>The global developer-grade engine to design aesthetic fonts, style real-time custom descriptions, create viral profile titles, and modify layouts across 200+ countries.</p>
+        <p>Design aesthetic fonts, craft real-time custom descriptions, and create viral profile titles — instantly, for free, right in your browser.</p>
     </header>
 
     <main>
-        <div class="workspace">
+        <div class="workspace" id="tool">
             
             <div class="mode-tabs">
                 <div class="tab-btn active" id="tab-fonts" onclick="switchMode('fonts')">✨ Font Changer</div>
@@ -159,14 +184,14 @@
 
         <!-- ==========================================
              ULTRA SEO UPGRADE CONTENT BLOCK (ADDED SAFELY)
-             ========================================== */ -->
+             ========================================== -->
         <div class="seo-content-container">
-            <h2 class="seo-section-title">Free Premium Fancy Font Changer & Aesthetic Bio Generator</h2>
+            <h2 class="seo-section-title" id="about">Free Premium Fancy Font Changer & Aesthetic Bio Generator</h2>
             <p class="seo-text">
                 Welcome to the world's most responsive <strong>Fancy Font Changer</strong>. This next-gen web utility acts as a standalone text styler, allowing digital creators to convert normal text into premium aesthetic typography instantly. If you are looking for a seamless way to copy and paste cool text designs for your Instagram bio, TikTok titles, or WhatsApp status layouts, our real-time engine delivers over 25+ viral font variants. Stand out from the crowd with optimized unicode character maps that are globally recognized across social web environments.
             </p>
 
-            <h2 class="seo-section-title">Frequently Asked Questions (FAQs)</h2>
+            <h2 class="seo-section-title" id="faq">Frequently Asked Questions (FAQs)</h2>
             
             <div class="seo-faq-item">
                 <div class="seo-faq-q">❓ How does the online font changer work?</div>
@@ -182,22 +207,37 @@
                 <div class="seo-faq-q">❓ Is this custom description editor completely free to execute?</div>
                 <div class="seo-faq-a">Yes, this layout maker and aesthetic text creator is 100% free with unlimited daily conversions. We prioritize strict open-source digital mechanics without collecting any personalized clipboard history or sensitive user data.</div>
             </div>
+
+            <div class="seo-faq-item">
+                <div class="seo-faq-q">❓ Will these fancy fonts affect my SEO or search rankings?</div>
+                <div class="seo-faq-a">No — these styled Unicode fonts are meant for creative display text like bios, usernames, and titles, not for page content meant to rank in search engines. Keep your website headings and articles in plain text, and save the fancy styles for social media.</div>
+            </div>
+
+            <div class="seo-faq-item">
+                <div class="seo-faq-q">❓ Will the fonts display correctly on every device and app?</div>
+                <div class="seo-faq-a">Most Unicode-based fonts render correctly across modern phones, apps, and platforms. A few very old devices or outdated apps may occasionally show a character as a blank box, so it's a good idea to preview your text in the target app before posting.</div>
+            </div>
+
+            <div class="seo-faq-item">
+                <div class="seo-faq-q">❓ Do you save or store the text I type into the tool?</div>
+                <div class="seo-faq-a">No. Every conversion happens locally in your browser using JavaScript — nothing is uploaded to a server, logged, or stored on our end.</div>
+            </div>
         </div>
     </main>
 
     <footer>
         <div class="footer-links">
-            <a href="#" onclick="alert('Privacy Policy: All text conversions happen 100% locally inside your browser using native JavaScript loops. We never track or store your input text.')">Privacy Policy</a>
-            <a href="#" onclick="alert('Terms of Service: This utility design engine is open-source and free to execute across all global boundaries.')">Terms of Service</a>
-            <a href="#" onclick="alert('DMCA Compliance: Unicode system maps and decoration arrays are generic representations and fully fair-use verified.')">DMCA Page</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Service</a>
+            <a href="dmca.html">DMCA Page</a>
             <a href="#" onclick="alert('Contact Support: For custom API integration or open-source configurations, connect via your project hub.')">Contact Us</a>
         </div>
-        <p class="copyright">&copy; 2026 Typography Global Systems Studio. Verified Responsive Cloud Matrix Engine. All Rights Reserved.</p>
+        <p class="copyright">&copy; 2026 Waqas Tech Finds. All Rights Reserved.</p>
     </footer>
 
     <!-- ==========================================
          ULTRA SEO DEEP INJECTION SCHEMA (ADDED SAFELY)
-         ========================================== */ -->
+         ========================================== -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -222,6 +262,27 @@
         "acceptedAnswer": {
           "@type": "Answer",
           "text": "Yes, this layout maker and aesthetic text creator is 100% free with unlimited daily conversions. We prioritize strict open-source digital mechanics."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Will these fancy fonts affect my SEO or search rankings?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No, styled Unicode fonts are meant for creative display text like bios and titles, not for content meant to rank in search engines."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Will the fonts display correctly on every device and app?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Most Unicode-based fonts render correctly across modern devices and apps, though very old software may occasionally show a character as a blank box."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Do you save or store the text I type into the tool?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No, every conversion happens locally in your browser. Nothing is uploaded, logged, or stored on our servers."
         }
       }]
     }
@@ -373,6 +434,11 @@
                     buttonElement.style.background = "linear-gradient(135deg, var(--accent-blue), var(--accent-purple))";
                 }, 1200);
             });
+        }
+
+        function toggleSidebar() {
+            document.getElementById('sideNav').classList.toggle('open');
+            document.getElementById('sideOverlay').classList.toggle('open');
         }
     </script>
 </body>
