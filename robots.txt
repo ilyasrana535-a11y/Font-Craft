@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ilyasrana535-a11y.github.io/Font-Craft/sitemap.xml
