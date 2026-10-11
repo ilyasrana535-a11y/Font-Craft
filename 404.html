@@ -1,13 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>404 Page Not Found - Font Craft</title>
     <meta name="robots" content="noindex">
     <meta name="description" content="The page you are looking for does not exist.">
+
+    <!-- Full URLs are used because this page can open at any path on the site -->
+    <link rel="icon" type="image/x-icon" href="https://ilyasrana535-a11y.github.io/Font-Craft/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://ilyasrana535-a11y.github.io/Font-Craft/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://ilyasrana535-a11y.github.io/Font-Craft/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://ilyasrana535-a11y.github.io/Font-Craft/apple-touch-icon.png">
+
+    <style>
+        body { margin: 0; text-align: center; padding: 100px 20px; background: #030712; color: #fff; font-family: system-ui, -apple-system, sans-serif; }
+        h1 { font-size: 2.5rem; margin: 0 0 12px; background: linear-gradient(135deg, #3b82f6, #8b5cf6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        p { color: #9ca3af; font-size: 1.1rem; line-height: 1.6; margin: 0 0 12px; }
+        a:focus-visible { outline: 3px solid #3b82f6; outline-offset: 2px; }
+        .home-btn { display: inline-block; margin-top: 20px; padding: 12px 24px; background: linear-gradient(135deg, #3b82f6, #8b5cf6); color: #fff; text-decoration: none; font-weight: 600; border-radius: 8px; }
+        .more-links { margin-top: 28px; font-size: 1rem; }
+        .more-links a { color: #3b82f6; }
+
+        /* Less empty space on phones */
+        @media (max-width: 600px) {
+            body { padding: 60px 20px; }
+            h1 { font-size: 2rem; }
+        }
+    </style>
 </head>
-<body style="text-align:center; padding:100px; background:#030712; color:#fff; font-family: system-ui;">
-    <h1 style="font-size:2.5rem; background:linear-gradient(135deg, #3b82f6, #8b5cf6); -webkit-background-clip:text; -webkit-text-fill-color:transparent;">404 - Page Not Found</h1>
-    <p style="color:#9ca3af; font-size:1.1rem;">Sorry, the page you are looking for doesn't exist.</p>
-    <a href="https://ilyasrana535-a11y.github.io/Font-Craft/" style="display:inline-block; margin-top:20px; padding:12px 24px; background:linear-gradient(135deg, #3b82f6, #8b5cf6); color:#fff; text-decoration:none; font-weight:600; border-radius:8px;">🏠 Go to Home</a>
+<body>
+    <h1>404 - Page Not Found</h1>
+    <p>Sorry, the page you are looking for doesn't exist.</p>
+    <a class="home-btn" href="https://ilyasrana535-a11y.github.io/Font-Craft/">🏠 Go to Home</a>
+    <p class="more-links">Or try the <a href="https://ilyasrana535-a11y.github.io/Font-Craft/#tool">font changer</a> or read our <a href="https://ilyasrana535-a11y.github.io/Font-Craft/blog.html">guide to changing fonts</a>.</p>
 </body>
 </html>
