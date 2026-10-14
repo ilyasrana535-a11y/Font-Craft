@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aesthetic Title Generator – Frames &amp; Symbols | Font Craft</title>
+<meta name="description" content="Aesthetic title generator with 30 frames, 15 font styles and a symbol pad. Build names and bios for Instagram, Discord and WhatsApp. Free, no signup.">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta name="author" content="Waqas Tech Finds">
+<link rel="canonical" href="https://ilyasrana535-a11y.github.io/Font-Craft/aesthetic-title-generator.html">
+
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Aesthetic Title Generator – Frames &amp; Symbols">
+<meta property="og:description" content="Aesthetic title generator with 30 frames, 15 font styles and a symbol pad. Build names and bios for Instagram, Discord and WhatsApp. Free, no signup.">
+<meta property="og:url" content="https://ilyasrana535-a11y.github.io/Font-Craft/aesthetic-title-generator.html">
+<meta property="og:site_name" content="Font Craft">
+<meta property="og:image" content="https://ilyasrana535-a11y.github.io/Font-Craft/preview.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Font Craft – Fancy Font Changer, copy and paste aesthetic fonts">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Aesthetic Title Generator – Frames &amp; Symbols">
+<meta name="twitter:description" content="Aesthetic title generator with 30 frames, 15 font styles and a symbol pad. Build names and bios for Instagram, Discord and WhatsApp. Free, no signup.">
+<meta name="twitter:image" content="https://ilyasrana535-a11y.github.io/Font-Craft/preview.png">
+<meta name="twitter:image:alt" content="Font Craft – Fancy Font Changer, copy and paste aesthetic fonts">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Aesthetic Title Generator by Font Craft",
+  "url": "https://ilyasrana535-a11y.github.io/Font-Craft/aesthetic-title-generator.html",
+  "description": "A free tool that builds aesthetic names and titles from 15 Unicode font styles, 30 symbol frames and a symbol pad, and checks the length against common name limits.",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "All",
+  "browserRequirements": "Requires HTML5 and JavaScript",
+  "author": {
+    "@type": "Organization",
+    "name": "Waqas Tech Finds",
+    "url": "https://waqastechfinds.github.io/"
+  },
+  "offers": {
+    "@type": "Offer",
+    "price": "0.00",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Font Craft",
+      "item": "https://ilyasrana535-a11y.github.io/Font-Craft/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Aesthetic Title Generator",
+      "item": "https://ilyasrana535-a11y.github.io/Font-Craft/aesthetic-title-generator.html"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is an aesthetic title generator?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It is a tool that turns a name or heading into a decorated title by adding a font style and a frame of symbols, such as stars, brackets or lines. The result is plain Unicode text that you can copy and paste."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How is this different from a font changer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A font changer only swaps the letters into another style. An aesthetic title generator also adds frames and symbols around the text and shows how long the result is, so it fits a name limit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Will the symbols show on every phone?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Simple symbols such as stars, hearts and brackets show on almost all modern devices. Emoji look different between phones, and very old devices may show boxes for rare symbols."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I use an aesthetic title as a username?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Instagram, TikTok and Discord usernames only allow plain letters, numbers and a few characters. Use the title in your display name, Name field or bio instead."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long can my title be?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It depends on where you paste it. The Instagram Name field allows 30 characters, a Discord display name 32 and a WhatsApp profile name 25. The color on each frame above shows which limits it fits."
+      }
+    }
+  ]
+}
+</script>
+
+<style>
+:root{--bg-primary:#030712;--bg-secondary:#111827;--accent-blue:#3b82f6;--accent-purple:#8b5cf6;--text-main:#f9fafb;--text-muted:#9ca3af;--border-color:#374151;--ok:#10b981;--warn:#f59e0b;--bad:#ef4444}
+*{box-sizing:border-box;margin:0;padding:0;font-family:'Inter',system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
+:focus-visible{outline:3px solid var(--accent-blue);outline-offset:2px}
+body{background:var(--bg-primary);color:var(--text-main);min-height:100vh;display:flex;flex-direction:column;justify-content:space-between}
+.wrap{max-width:800px;width:100%;margin:0 auto;padding:0 20px 40px}
+.crumbs{font-size:.85rem;color:var(--text-muted);padding:22px 0 0}
+.crumbs a{color:var(--text-muted)}
+.hero{text-align:center;padding:26px 0 10px}
+.hero h1{font-size:2.3rem;font-weight:800;line-height:1.15;background:linear-gradient(135deg,var(--accent-blue),var(--accent-purple));-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:10px}
+.hero .subtitle{color:var(--text-muted);font-size:1rem;line-height:1.6;max-width:640px;margin:0 auto}
+.byline{font-size:.82rem;color:var(--text-muted);margin-top:12px}
+@media (max-width:600px){.hero{padding-top:14px}.hero h1{font-size:1.75rem}.crumbs{padding-top:70px}}
+.answer-box{background:rgba(139,92,246,.08);border:1px solid rgba(139,92,246,.3);border-left:4px solid var(--accent-purple);border-radius:10px;padding:16px 18px;margin:20px 0;color:var(--text-muted);font-size:.95rem;line-height:1.7}
+.answer-box strong{color:#fff}
+.panel{background:var(--bg-secondary);border:1px solid var(--border-color);border-radius:16px;padding:25px;margin:22px 0;box-shadow:0 20px 40px rgba(0,0,0,.25)}
+.panel h2.sec-title,.sec-title{font-size:1.4rem;color:#fff;margin:0 0 14px;border-left:4px solid var(--accent-blue);padding-left:10px}
+.panel h3,.content h3{font-size:1.05rem;color:#fff;margin:18px 0 8px}
+.content{margin:30px 0 0}
+.content h2{font-size:1.4rem;color:#fff;margin:34px 0 12px;border-left:4px solid var(--accent-blue);padding-left:10px}
+.content p,.panel p.note,.note{color:var(--text-muted);font-size:.95rem;line-height:1.7;margin-bottom:14px}
+.content ul,.content ol{color:var(--text-muted);font-size:.95rem;line-height:1.8;margin:0 0 14px 22px}
+.content li{margin-bottom:6px}
+.content strong{color:#fff}
+.content a,.note a{color:var(--accent-blue)}
+.note{font-size:.85rem;margin:10px 0 0}
+label,.lbl{display:block;font-size:.8rem;text-transform:uppercase;letter-spacing:.05em;color:var(--text-muted);font-weight:700;margin:12px 0 6px}
+input[type=text],textarea,select{width:100%;background:var(--bg-primary);color:var(--text-main);border:2px solid var(--border-color);border-radius:10px;padding:12px 14px;font-size:1.05rem}
+textarea{min-height:110px;resize:vertical;line-height:1.5}
+input[type=text]:focus,textarea:focus,select:focus{border-color:var(--accent-blue)}
+select{padding:10px 12px;font-size:.95rem}
+.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.row>*{flex:1 1 auto}
+.badges{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0}
+.badge{background:rgba(59,130,246,.1);border:1px solid rgba(59,130,246,.25);color:var(--accent-blue);padding:4px 10px;border-radius:20px;font-size:.82rem;font-weight:600}
+.badge.ok{background:rgba(16,185,129,.1);border-color:rgba(16,185,129,.35);color:var(--ok)}
+.badge.warn{background:rgba(245,158,11,.1);border-color:rgba(245,158,11,.35);color:var(--warn)}
+.badge.bad{background:rgba(239,68,68,.1);border-color:rgba(239,68,68,.35);color:var(--bad)}
+.out-list{display:grid;gap:10px;margin-top:14px}
+.out-item{background:var(--bg-primary);border:1px solid var(--border-color);border-radius:10px;padding:12px 14px;display:flex;gap:12px;align-items:center;justify-content:space-between}
+.out-item.sel{border-color:var(--accent-purple)}
+.out-main{min-width:0;flex:1}
+.out-label{display:block;font-size:.72rem;text-transform:uppercase;letter-spacing:.05em;color:var(--text-muted);font-weight:700;margin-bottom:3px}
+.out-text{display:block;font-size:1.2rem;line-height:1.4;overflow-wrap:anywhere;white-space:pre-wrap}
+.out-actions{display:flex;gap:8px;flex-shrink:0}
+.btn-copy,.btn-ghost,.chip{font-size:.88rem;font-weight:700;border-radius:8px;cursor:pointer;padding:9px 16px;border:0}
+.btn-copy{background:linear-gradient(135deg,var(--accent-blue),var(--accent-purple));color:#fff;min-width:78px}
+.btn-copy:hover{opacity:.9}
+.btn-copy.done{background:var(--ok)}
+.btn-ghost,.chip{background:transparent;color:var(--accent-blue);border:1px solid var(--accent-blue)}
+.btn-ghost:hover,.chip:hover{background:rgba(59,130,246,.1)}
+.btn-ghost[aria-pressed=true],.chip[aria-pressed=true]{background:rgba(139,92,246,.2);color:#fff;border-color:var(--accent-purple)}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0}
+.chip{padding:7px 13px;font-size:.82rem}
+.tool-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+.tbl-wrap{overflow-x:auto;margin:0 0 16px}
+table{width:100%;border-collapse:collapse;font-size:.92rem}
+th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--border-color);vertical-align:top;color:var(--text-muted)}
+th{color:#fff;font-weight:700;white-space:nowrap}
+td strong{color:#fff}
+code,.code{background:#1f2937;border:1px solid var(--border-color);padding:1px 6px;border-radius:4px;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.88em;color:#e5e7eb}
+.sample{font-size:1.1em;color:#fff;overflow-wrap:anywhere}
+.example-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin:10px 0 16px}
+.example{background:var(--bg-primary);border:1px solid var(--border-color);border-radius:10px;padding:14px}
+.example .out-label{margin-bottom:6px}
+.example .sample{display:block;font-size:1.15rem;line-height:1.5}
+.faq-item{background:var(--bg-primary);border:1px solid var(--border-color);border-radius:8px;padding:15px;margin-bottom:12px}
+.faq-q{font-size:1rem;font-weight:600;color:#fff;margin-bottom:6px}
+.faq-item p{color:var(--text-muted);font-size:.9rem;line-height:1.55}
+.cta-box{background:rgba(59,130,246,.08);border:1px solid rgba(59,130,246,.3);border-radius:10px;padding:20px;text-align:center;margin:30px 0 10px}
+.cta-box p{color:var(--text-muted);font-size:.95rem;line-height:1.6;margin-bottom:6px}
+.cta-box a.cta{display:inline-block;margin:10px 6px 0;background:linear-gradient(135deg,var(--accent-blue),var(--accent-purple));color:#fff;padding:11px 24px;border-radius:8px;text-decoration:none;font-weight:700;font-size:.92rem}
+.cta-box a.cta.alt{background:transparent;border:1px solid var(--accent-blue);color:var(--accent-blue)}
+.bar{height:8px;background:#1f2937;border-radius:6px;overflow:hidden;margin:6px 0 4px}
+.bar-fill{height:100%;width:0;background:var(--ok);transition:width .15s}
+.bar-fill.warn{background:var(--warn)}.bar-fill.bad{background:var(--bad)}
+/* approximate app previews */
+.pv-title{font-size:.8rem;text-transform:uppercase;letter-spacing:.05em;color:var(--text-muted);font-weight:700;margin:18px 0 8px}
+.dc-pv{background:#313338;color:#dbdee1;border-radius:10px;padding:14px;font-family:system-ui,"Segoe UI",Roboto,sans-serif}
+.dc-row{display:flex;gap:10px;align-items:flex-start}
+.dc-av{width:38px;height:38px;border-radius:50%;background:#5865f2;flex-shrink:0}
+.dc-av.b{background:#3ba55d;width:28px;height:28px}
+.dc-head{display:flex;gap:8px;align-items:baseline;flex-wrap:wrap}
+.dc-name{font-weight:600;color:#fff;overflow-wrap:anywhere}
+.dc-time{font-size:.72rem;color:#949ba4}
+.dc-msg{font-size:.95rem;margin-top:2px}
+.dc-mem{margin-top:12px;padding-top:10px;border-top:1px solid #3f4147;display:flex;gap:10px;align-items:center}
+.ig-pv{background:#000;color:#f5f5f5;border:1px solid #262626;border-radius:14px;padding:16px;max-width:380px;margin:0 auto}
+.ig-top{display:flex;gap:14px;align-items:center;margin-bottom:10px}
+.ig-av{width:62px;height:62px;border-radius:50%;background:linear-gradient(135deg,#f58529,#dd2a7b,#8134af);flex-shrink:0}
+.ig-user{font-size:.85rem;color:#a8a8a8}
+.ig-name{font-weight:700;font-size:.95rem;overflow-wrap:anywhere}
+.ig-bio{font-size:.9rem;line-height:1.4;white-space:pre-wrap;overflow-wrap:anywhere;margin-top:4px}
+.wa-pv{background:#0b141a;border-radius:10px;padding:16px;font-family:system-ui,"Segoe UI",Roboto,sans-serif}
+.wa-bubble{background:#005c4b;color:#e9edef;border-radius:10px 10px 2px 10px;padding:9px 12px;max-width:100%;margin-left:auto;font-size:.95rem;line-height:1.45;overflow-wrap:anywhere;width:fit-content}
+.wa-bubble .ln{white-space:pre-wrap;min-height:1.2em}
+.wa-bubble strong{font-weight:700;color:#fff}
+.wa-bubble .wa-mono{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.9em}
+.wa-bubble .wa-code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.9em;background:rgba(255,255,255,.12);border-radius:4px;padding:0 4px}
+.wa-bubble .wa-q{border-left:3px solid #06cf9c;padding-left:8px;background:rgba(0,0,0,.18);border-radius:3px}
+.wa-bubble .wa-li{display:flex;gap:8px}
+.wa-bubble .wa-li .mk{flex-shrink:0;min-width:1.2em}
+.toolbar{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0}
+.toolbar button{background:#1f2937;color:#fff;border:1px solid var(--border-color);border-radius:8px;padding:8px 12px;font-size:.85rem;font-weight:700;cursor:pointer}
+.toolbar button:hover{border-color:var(--accent-blue)}
+.sympad{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0 10px}
+.sympad button{background:var(--bg-primary);color:#fff;border:1px solid var(--border-color);border-radius:8px;min-width:40px;height:40px;font-size:1.15rem;cursor:pointer}
+.sympad button:hover{border-color:var(--accent-purple)}
+.hint{color:var(--text-muted);font-size:.85rem;margin:4px 0 0}
+.status{font-size:.92rem;margin-top:10px;line-height:1.6;color:var(--text-muted)}
+.status.ok{color:var(--ok)}.status.bad{color:var(--bad)}
+.legend{font-size:.8rem;color:var(--text-muted);margin:8px 0 0}
+/* sidebar + footer (same as the rest of the site) */
+.sidebar-toggle{position:fixed;top:15px;left:15px;z-index:1001;background:var(--bg-secondary);border:1px solid var(--border-color);color:var(--text-main);width:44px;height:44px;border-radius:8px;cursor:pointer;font-size:1.3rem;display:flex;align-items:center;justify-content:center}
+.sidebar-overlay{position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:999;display:none}
+.sidebar-overlay.open{display:block}
+.sidebar{position:fixed;top:0;left:-260px;width:240px;height:100%;background:var(--bg-secondary);border-right:1px solid var(--border-color);z-index:1000;padding:70px 20px 20px;transition:left .3s ease,visibility 0s linear .3s;overflow-y:auto;visibility:hidden}
+.sidebar.open{left:0;visibility:visible;transition:left .3s ease}
+.sidebar .sidebar-heading{display:block;color:var(--text-muted);font-size:.8rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;margin-bottom:10px}
+.sidebar a{display:block;color:var(--text-muted);text-decoration:none;padding:10px 0;font-size:.95rem;border-bottom:1px solid rgba(255,255,255,.05)}
+.sidebar a:hover{color:var(--accent-blue)}
+footer{background:var(--bg-secondary);border-top:1px solid var(--border-color);padding:25px 20px;text-align:center;font-size:.85rem;color:var(--text-muted)}
+footer a{color:var(--text-muted);text-decoration:none;margin:0 10px}
+footer a:hover{color:var(--accent-blue)}
+footer .footer-contact{margin-top:12px}
+footer .footer-contact a{margin:0;text-decoration:underline}
+</style>
+</head>
+<body>
+<button class="sidebar-toggle" onclick="toggleSidebar()" aria-label="Open navigation menu" aria-expanded="false" aria-controls="sideNav">☰</button>
+<div class="sidebar-overlay" id="sideOverlay" onclick="toggleSidebar(true)"></div>
+<nav class="sidebar" id="sideNav" aria-label="Site navigation">
+    <span class="sidebar-heading">Navigate</span>
+    <a href="./#tool">✨ Font Changer Tool</a>
+    <a href="./#about">📖 About This Tool</a>
+    <a href="./#how-to-use">🧭 How To Use</a>
+    <a href="./#styles">🔤 Font Styles</a>
+    <a href="./#platforms">📲 Instagram, TikTok &amp; More</a>
+    <a href="./#faq">❓ FAQs</a>
+    <a href="blog.html">📰 Blog: Change Fonts Guide</a>
+    <span class="sidebar-heading" style="margin-top:20px;">Legal</span>
+    <a href="privacy.html">🔒 Privacy Policy</a>
+    <a href="terms.html">📄 Terms of Service</a>
+    <a href="dmca.html">⚖️ DMCA</a>
+    <span class="sidebar-heading" style="margin-top:20px;">More From Us</span>
+    <a href="https://waqastechfinds.github.io/" target="_blank" rel="noopener">📅 The Clarity Planner</a>
+    <a href="https://waqastechfinds.blogspot.com/" target="_blank" rel="noopener">📱 Tech Finds Blog</a>
+</nav>
+
+<main class="wrap">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="./">Font Craft</a> › Aesthetic Title Generator</nav>
+
+    <header class="hero">
+        <h1>Aesthetic Title Generator</h1>
+        <p class="subtitle">Add a font, a frame and a few symbols to your name or title, then copy it with its length checked against common limits.</p>
+        <p class="byline">By <strong>Waqas Tech Finds</strong> · Updated <time datetime="2026-10-14">October 14, 2026</time></p>
+    </header>
+
+    <div class="answer-box"><strong>Quick answer:</strong> An aesthetic title is your name or heading dressed up with three things: a <strong>font style</strong>, a <strong>frame</strong> of symbols around it, and sometimes a few extra symbols. Type your text, pick a font, tap Copy on a frame you like and paste it into your bio, name or title. Everything is plain Unicode text, so it works anywhere you can type.</div>
+
+    <section class="panel" id="tool" aria-labelledby="tool-h">
+        <h2 class="sec-title" id="tool-h">Aesthetic Title Studio</h2>
+        <label for="atText">Your name or title</label>
+        <input type="text" id="atText" maxlength="60" value="Luna" autocomplete="off" spellcheck="false">
+        <div class="row">
+            <div>
+                <label for="atStyle">Font style</label>
+                <select id="atStyle"></select>
+            </div>
+            <div>
+                <label for="atCase">Letter case</label>
+                <select id="atCase">
+                    <option value="keep">Keep as typed</option>
+                    <option value="upper">UPPERCASE</option>
+                    <option value="lower">lowercase</option>
+                </select>
+            </div>
+        </div>
+
+        <span class="lbl">Symbol pad (tap to add to your text)</span>
+        <div id="atPad"></div>
+
+        <span class="lbl">Frames</span>
+        <div class="chips" id="atCats" role="group" aria-label="Frame categories"></div>
+        <div class="out-list" id="atList" aria-live="polite"></div>
+        <p class="legend">Length colors: green fits all three limits (up to 25 characters), amber fits Instagram and Discord (up to 32), red is longer. Instagram Name field: 30. Discord display name: 32. WhatsApp profile name: 25. Limits can change, so the app has the final say.</p>
+    </section>
+
+    <div class="content">
+        <h2 id="what">What Makes a Title Look Aesthetic</h2>
+        <p>An ordinary font changer only swaps the letters. An aesthetic title goes one step further and adds structure around the name, the same way a frame changes how a picture feels. The three ingredients are:</p>
+        <ul>
+            <li><strong>The font style:</strong> script for soft and elegant, gothic for dark, small caps for clean and minimal.</li>
+            <li><strong>The frame:</strong> brackets, lines, sparkles, hearts or moons placed before and after the name.</li>
+            <li><strong>The symbols:</strong> one or two small extras, such as a star or a moon, that set the mood.</li>
+        </ul>
+
+        <h2 id="steps">How to Build One in 3 Steps</h2>
+        <ol>
+            <li><strong>Type your text</strong> in the box above. Short names work best.</li>
+            <li><strong>Pick a font style</strong> from the menu. The frames below update at once.</li>
+            <li><strong>Copy a frame</strong> and paste it into your Instagram name, Discord display name, WhatsApp About or any heading.</li>
+        </ol>
+
+        <h2 id="vibes">Pick a Frame by Vibe</h2>
+        <div class="example-grid">
+            <div class="example"><span class="out-label">Soft and dreamy</span><span class="sample" data-vibe="soft">Luna</span></div>
+            <div class="example"><span class="out-label">Dark and moody</span><span class="sample" data-vibe="dark">Luna</span></div>
+            <div class="example"><span class="out-label">Clean and minimal</span><span class="sample" data-vibe="minimal">Luna</span></div>
+            <div class="example"><span class="out-label">Gamer and bold</span><span class="sample" data-vibe="gamer">Luna</span></div>
+            <div class="example"><span class="out-label">Business and neat</span><span class="sample" data-vibe="business">Luna</span></div>
+        </div>
+
+        <h2 id="symbols">Symbols That Display Well</h2>
+        <p>Not every symbol shows up on every phone. The safest ones are simple shapes that have been in Unicode for a long time, such as stars, hearts, moons, brackets and line characters. Emoji are different: they are drawn by each phone maker, so they look different on iPhone and Android, and very new emoji may not show on older devices.</p>
+        <ul>
+            <li>Use <strong>one frame and one font</strong> per title. Mixing many looks messy.</li>
+            <li>Keep it <strong>short</strong>. Symbols use up your character limit quickly.</li>
+            <li><strong>Test on your phone</strong> before you save it. A box instead of a symbol means that device does not support it.</li>
+        </ul>
+
+        <h2 id="limits">Where Titles Work and the Length Limits</h2>
+        <div class="tbl-wrap"><table>
+            <thead><tr><th>Place</th><th>Limit</th><th>Notes</th></tr></thead>
+            <tbody>
+                <tr><td><strong>Instagram Name field</strong></td><td>30 characters</td><td>Searchable, so keep your main keyword in plain text too.</td></tr>
+                <tr><td><strong>Discord display name</strong></td><td>32 characters</td><td>Special characters and emoji are allowed.</td></tr>
+                <tr><td><strong>WhatsApp profile name</strong></td><td>25 characters</td><td>Contacts who saved you usually see their own saved name.</td></tr>
+                <tr><td><strong>Usernames</strong></td><td>Varies</td><td>Instagram, TikTok and Discord usernames only allow plain characters.</td></tr>
+            </tbody>
+        </table></div>
+        <p>Titles also work for anything you control as free text: a bio heading, a channel or server name, a playlist or board title, or a caption opener.</p>
+
+        <h2 id="access">A Note on Readability and Accessibility</h2>
+        <p>Symbols are real characters, and a screen reader may announce each one by name, so a title packed with symbols can be tiring to listen to. Keep the name itself easy to read and use symbols as decoration, not as the only way to understand who you are.</p>
+
+        <h2 id="faq">Frequently Asked Questions</h2>
+        <div class="faq-item">
+            <div class="faq-q">What is an aesthetic title generator?</div>
+            <p>It is a tool that turns a name or heading into a decorated title by adding a font style and a frame of symbols, such as stars, brackets or lines. The result is plain Unicode text that you can copy and paste.</p>
+        </div>
+        <div class="faq-item">
+            <div class="faq-q">How is this different from a font changer?</div>
+            <p>A font changer only swaps the letters into another style. An aesthetic title generator also adds frames and symbols around the text and shows how long the result is, so it fits a name limit.</p>
+        </div>
+        <div class="faq-item">
+            <div class="faq-q">Will the symbols show on every phone?</div>
+            <p>Simple symbols such as stars, hearts and brackets show on almost all modern devices. Emoji look different between phones, and very old devices may show boxes for rare symbols.</p>
+        </div>
+        <div class="faq-item">
+            <div class="faq-q">Can I use an aesthetic title as a username?</div>
+            <p>No. Instagram, TikTok and Discord usernames only allow plain letters, numbers and a few characters. Use the title in your display name, Name field or bio instead.</p>
+        </div>
+        <div class="faq-item">
+            <div class="faq-q">How long can my title be?</div>
+            <p>It depends on where you paste it. The Instagram Name field allows 30 characters, a Discord display name 32 and a WhatsApp profile name 25. The color on each frame above shows which limits it fits.</p>
+        </div>
+
+        <div class="cta-box">
+            <p><strong>Want every style in one place?</strong></p>
+            <p>This page shows the styles and tools that matter most for aesthetic names and titles. The full Font Craft tool has all 15 font styles, a Title Framer and a Description Editor.</p>
+            <a class="cta" href="./#tool">Open the full Font Changer →</a>
+            <a class="cta alt" href="blog.html">Read the guide</a>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <a href="./">Home</a>
+    <a href="blog.html">Guide</a>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="terms.html">Terms of Service</a>
+    <a href="dmca.html">DMCA</a>
+    <a href="mailto:waqastechfinds@gmail.com">Contact Us</a>
+    <p class="footer-contact">Contact: <a href="mailto:waqastechfinds@gmail.com">waqastechfinds@gmail.com</a></p>
+    <p style="margin-top:12px;opacity:.7;">&copy; 2026 Waqas Tech Finds. All Rights Reserved.</p>
+</footer>
+
+<script>
+
+const $ = id => document.getElementById(id);
+const cpLen = s => Array.from(s).length;
+
+function toggleSidebar(forceClose) {
+    const nav = $('sideNav'), overlay = $('sideOverlay');
+    const toggleBtn = document.querySelector('.sidebar-toggle');
+    const willOpen = forceClose === true ? false : !nav.classList.contains('open');
+    nav.classList.toggle('open', willOpen);
+    overlay.classList.toggle('open', willOpen);
+    toggleBtn.setAttribute('aria-expanded', willOpen ? 'true' : 'false');
+    toggleBtn.setAttribute('aria-label', willOpen ? 'Close navigation menu' : 'Open navigation menu');
+    if (willOpen) { const first = nav.querySelector('a'); if (first) first.focus(); }
+    else if (nav.contains(document.activeElement)) { toggleBtn.focus(); }
+}
+document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && $('sideNav').classList.contains('open')) toggleSidebar(true);
+});
+
+function buildMap(upperStart, lowerStart, digitStart, exceptions) {
+    const dict = {};
+    for (let i = 0; i < 26; i++) {
+        const up = String.fromCharCode(65 + i), low = String.fromCharCode(97 + i);
+        if (upperStart !== null) dict[up] = (exceptions && exceptions[up]) || String.fromCodePoint(upperStart + i);
+        if (lowerStart !== null) dict[low] = (exceptions && exceptions[low]) || String.fromCodePoint(lowerStart + i);
+    }
+    if (digitStart !== null) { for (let i = 0; i < 10; i++) dict[String(i)] = String.fromCodePoint(digitStart + i); }
+    return dict;
+}
+function buildBubbles() {
+    const dict = buildMap(0x24B6, 0x24D0, null);
+    dict['0'] = '\u24EA';
+    for (let i = 1; i <= 9; i++) dict[String(i)] = String.fromCodePoint(0x2460 + i - 1);
+    return dict;
+}
+function buildSmallCaps() {
+    const from = 'abcdefghijklmnopqrstuvwxyz';
+    const to = Array.from('\u1D00\u0299\u1D04\u1D05\u1D07\uA730\u0262\u029C\u026A\u1D0A\u1D0B\u029F\u1D0D\u0274\u1D0F\u1D18\u01EB\u0280\uA731\u1D1B\u1D1C\u1D20\u1D21x\u028F\u1D22');
+    const dict = {};
+    for (let i = 0; i < 26; i++) { dict[from[i]] = to[i]; dict[from[i].toUpperCase()] = to[i]; }
+    return dict;
+}
+const maps = {
+    script: buildMap(0x1D49C, 0x1D4B6, null, { B: '\u212C', E: '\u2130', F: '\u2131', H: '\u210B', I: '\u2110', L: '\u2112', M: '\u2133', R: '\u211B', e: '\u212F', g: '\u210A', o: '\u2134' }),
+    boldScript: buildMap(0x1D4D0, 0x1D4EA, null),
+    gothic: buildMap(0x1D504, 0x1D51E, null, { C: '\u212D', H: '\u210C', I: '\u2111', R: '\u211C', Z: '\u2128' }),
+    boldGothic: buildMap(0x1D56C, 0x1D586, null),
+    boldItalic: buildMap(0x1D468, 0x1D482, null),
+    italic: buildMap(0x1D434, 0x1D44E, null, { h: '\u210E' }),
+    bold: buildMap(0x1D400, 0x1D41A, 0x1D7CE),
+    sansBold: buildMap(0x1D5D4, 0x1D5EE, 0x1D7EC),
+    doubleStruck: buildMap(0x1D538, 0x1D552, 0x1D7D8, { C: '\u2102', H: '\u210D', N: '\u2115', P: '\u2119', Q: '\u211A', R: '\u211D', Z: '\u2124' }),
+    mono: buildMap(0x1D670, 0x1D68A, 0x1D7F6),
+    bubbles: buildBubbles(),
+    squares: buildMap(0x1F130, 0x1F130, null),
+    smallCaps: buildSmallCaps(),
+    fullwidth: buildMap(0xFF21, 0xFF41, 0xFF10)
+};
+function mapConverter(str, dict) {
+    return Array.from(str).map(c => (dict[c] !== undefined ? dict[c] : c)).join('');
+}
+const STYLE_LIST = [
+    { key: 'script', title: 'Script', fn: t => mapConverter(t, maps.script) },
+    { key: 'boldScript', title: 'Bold Script', fn: t => mapConverter(t, maps.boldScript) },
+    { key: 'gothic', title: 'Gothic', fn: t => mapConverter(t, maps.gothic) },
+    { key: 'boldGothic', title: 'Bold Gothic', fn: t => mapConverter(t, maps.boldGothic) },
+    { key: 'boldItalic', title: 'Bold Italic', fn: t => mapConverter(t, maps.boldItalic) },
+    { key: 'italic', title: 'Italic', fn: t => mapConverter(t, maps.italic) },
+    { key: 'bold', title: 'Bold', fn: t => mapConverter(t, maps.bold) },
+    { key: 'sansBold', title: 'Sans Bold', fn: t => mapConverter(t, maps.sansBold) },
+    { key: 'doubleStruck', title: 'Double-Struck', fn: t => mapConverter(t, maps.doubleStruck) },
+    { key: 'mono', title: 'Monospace', fn: t => mapConverter(t, maps.mono) },
+    { key: 'bubbles', title: 'Bubble', fn: t => mapConverter(t, maps.bubbles) },
+    { key: 'squares', title: 'Squares', fn: t => mapConverter(t, maps.squares) },
+    { key: 'smallCaps', title: 'Small Caps', fn: t => mapConverter(t, maps.smallCaps) },
+    { key: 'fullwidth', title: 'Fullwidth', fn: t => mapConverter(t, maps.fullwidth) },
+    { key: 'vaporwave', title: 'Vaporwave Spacing', fn: t => Array.from(t).join(' ') }
+];
+const STYLE_BY_KEY = {};
+STYLE_LIST.forEach(s => { STYLE_BY_KEY[s.key] = s; });
+function styleText(key, text) {
+    const s = STYLE_BY_KEY[key];
+    return s ? s.fn(text) : text;
+}
+
+function legacyCopy(text) {
+    return new Promise((resolve, reject) => {
+        const ta = document.createElement('textarea');
+        ta.value = text; ta.setAttribute('readonly', '');
+        ta.style.position = 'fixed'; ta.style.top = '0'; ta.style.left = '-9999px'; ta.style.opacity = '0';
+        document.body.appendChild(ta);
+        ta.focus(); ta.select(); ta.setSelectionRange(0, text.length);
+        let ok = false;
+        try { ok = document.execCommand('copy'); } catch (e) { ok = false; }
+        document.body.removeChild(ta);
+        if (ok) resolve(); else reject(new Error('copy failed'));
+    });
+}
+function copyToClipboard(text) {
+    if (navigator.clipboard && window.isSecureContext) {
+        return navigator.clipboard.writeText(text).catch(() => legacyCopy(text));
+    }
+    return legacyCopy(text);
+}
+function copyWithFeedback(text, btn, label) {
+    const original = label || 'Copy';
+    copyToClipboard(text).then(() => {
+        btn.textContent = 'Copied!'; btn.classList.add('done');
+        setTimeout(() => { btn.textContent = original; btn.classList.remove('done'); }, 1200);
+    }).catch(() => {
+        btn.textContent = 'Copy failed';
+        setTimeout(() => { btn.textContent = original; }, 1500);
+    });
+}
+function el(tag, cls, text) {
+    const n = document.createElement(tag);
+    if (cls) n.className = cls;
+    if (text !== undefined) n.textContent = text;
+    return n;
+}
+function fillSamples() {
+    document.querySelectorAll('[data-style]').forEach(n => {
+        const s = STYLE_BY_KEY[n.getAttribute('data-style')];
+        if (s) n.textContent = s.fn(n.textContent);
+    });
+}
+
+
+const AT_FRAMES = [
+    { c: 'Sparkle', f: '✧ {t} ✧' }, { c: 'Sparkle', f: '⋆｡°✩ {t} ✩°｡⋆' }, { c: 'Sparkle', f: '˚ʚ♡ɞ˚ {t} ˚ʚ♡ɞ˚' },
+    { c: 'Sparkle', f: '₊˚⊹ {t} ⊹˚₊' }, { c: 'Sparkle', f: '✦ {t} ✦' },
+    { c: 'Kawaii', f: '♡ {t} ♡' }, { c: 'Kawaii', f: '⋆˚♡ {t} ♡˚⋆' }, { c: 'Kawaii', f: '❀ {t} ❀' },
+    { c: 'Dark', f: '☾ {t} ☽' }, { c: 'Dark', f: '⛧ {t} ⛧' }, { c: 'Dark', f: '† {t} †' }, { c: 'Dark', f: '☠ {t} ☠' },
+    { c: 'Brackets', f: '『 {t} 』' }, { c: 'Brackets', f: '【 {t} 】' }, { c: 'Brackets', f: '「 {t} 」' },
+    { c: 'Brackets', f: '《 {t} 》' }, { c: 'Brackets', f: '〔 {t} 〕' },
+    { c: 'Lines', f: '── {t} ──' }, { c: 'Lines', f: '━━ {t} ━━' }, { c: 'Lines', f: '═══ {t} ═══' },
+    { c: 'Lines', f: '· · · {t} · · ·' }, { c: 'Lines', f: '—— {t} ——' },
+    { c: 'Minimal', f: '✧ {t}' }, { c: 'Minimal', f: '{t} ✧' }, { c: 'Minimal', f: '[ {t} ]' },
+    { c: 'Minimal', f: '〈 {t} 〉' }, { c: 'Minimal', f: '• {t} •' },
+    { c: 'Gamer', f: '༺ {t} ༻' }, { c: 'Gamer', f: '♛ {t} ♛' }, { c: 'Gamer', f: '⚔ {t} ⚔' }
+];
+const AT_PAD = [
+    '✧ ✦ ✩ ✪ ⋆ ˚ ｡ ･ ﾟ ✿ ❀ ❁ ★ ☆',
+    '♡ ♥ ❥ ❣ ♪ ♫ ☺ ☻',
+    '☾ ☽ ☁ ☀ ☂ ❄ ☄ ✈',
+    '⛧ † ☠ ☢ ⚔ ♛ ♚ ♞',
+    '『 』 【 】 「 」 《 》 ─ ━ ═ ┈ ┄ • ·'
+].join(' ').split(' ');
+const AT_STYLES = ['plain'].concat(STYLE_LIST.map(s => s.key));
+let atCat = 'All';
+
+function atApplyCase(t) {
+    const c = $('atCase').value;
+    return c === 'upper' ? t.toUpperCase() : (c === 'lower' ? t.toLowerCase() : t);
+}
+function atStyled(t) {
+    const k = $('atStyle').value;
+    return k === 'plain' ? t : styleText(k, t);
+}
+function atText() {
+    const raw = $('atText').value.trim();
+    return raw === '' ? 'Luna' : raw;
+}
+function atRender() {
+    const base = atStyled(atApplyCase(atText()));
+    const list = $('atList');
+    list.textContent = '';
+    AT_FRAMES.filter(fr => atCat === 'All' || fr.c === atCat).forEach(fr => {
+        const out = fr.f.replace('{t}', base);
+        const n = cpLen(out);
+        const row = el('div', 'out-item');
+        const main = el('div', 'out-main');
+        main.appendChild(el('span', 'out-label', fr.c));
+        main.appendChild(el('span', 'out-text', out));
+        const badge = el('span', n <= 25 ? 'badge ok' : (n <= 32 ? 'badge warn' : 'badge bad'), n + ' chars');
+        badge.style.marginTop = '6px'; badge.style.display = 'inline-block';
+        main.appendChild(badge);
+        const cp = el('button', 'btn-copy', 'Copy');
+        cp.type = 'button';
+        cp.setAttribute('aria-label', 'Copy frame: ' + out);
+        cp.addEventListener('click', () => copyWithFeedback(out, cp));
+        const act = el('div', 'out-actions'); act.appendChild(cp);
+        row.appendChild(main); row.appendChild(act);
+        list.appendChild(row);
+    });
+}
+function atInsert(sym) {
+    const inp = $('atText');
+    const s = inp.selectionStart == null ? inp.value.length : inp.selectionStart;
+    const e = inp.selectionEnd == null ? s : inp.selectionEnd;
+    inp.value = inp.value.slice(0, s) + sym + inp.value.slice(e);
+    const pos = s + sym.length;
+    try { inp.setSelectionRange(pos, pos); } catch (err) {}
+    inp.focus();
+    atRender();
+}
+(function initAesthetic() {
+    const sel = $('atStyle');
+    AT_STYLES.forEach(k => {
+        const o = document.createElement('option');
+        o.value = k; o.textContent = k === 'plain' ? 'Plain (no font change)' : STYLE_BY_KEY[k].title;
+        sel.appendChild(o);
+    });
+    sel.value = 'boldScript';
+    const pad = $('atPad'); pad.className = 'sympad';
+    AT_PAD.forEach(sym => {
+        const b = el('button', null, sym);
+        b.type = 'button';
+        b.setAttribute('aria-label', 'Add symbol ' + sym);
+        b.addEventListener('click', () => atInsert(sym));
+        pad.appendChild(b);
+    });
+    const cats = ['All'].concat(Array.from(new Set(AT_FRAMES.map(f => f.c))));
+    const wrap = $('atCats');
+    cats.forEach(c => {
+        const b = el('button', 'chip', c);
+        b.type = 'button';
+        b.setAttribute('aria-pressed', c === 'All' ? 'true' : 'false');
+        b.addEventListener('click', () => {
+            atCat = c;
+            wrap.querySelectorAll('button').forEach(x => x.setAttribute('aria-pressed', x === b ? 'true' : 'false'));
+            atRender();
+        });
+        wrap.appendChild(b);
+    });
+    $('atText').addEventListener('input', atRender);
+    $('atStyle').addEventListener('change', atRender);
+    $('atCase').addEventListener('change', atRender);
+    atRender();
+
+    // live examples in "Pick a frame by vibe"
+    const vibes = {
+        soft: { style: 'boldScript', frame: '˚ʚ♡ɞ˚ {t} ˚ʚ♡ɞ˚' },
+        dark: { style: 'boldGothic', frame: '⛧ {t} ⛧' },
+        minimal: { style: 'smallCaps', frame: '· · · {t} · · ·' },
+        gamer: { style: 'bold', frame: '༺ {t} ༻' },
+        business: { style: 'sansBold', frame: '【 {t} 】' }
+    };
+    document.querySelectorAll('[data-vibe]').forEach(n => {
+        const v = vibes[n.getAttribute('data-vibe')];
+        if (v) n.textContent = v.frame.replace('{t}', styleText(v.style, n.textContent));
+    });
+})();
+
+</script>
+</body>
+</html>
