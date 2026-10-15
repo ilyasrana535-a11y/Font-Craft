@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Instagram Bio Fonts – Fancy Bio Builder | Font Craft</title>
+<meta name="description" content="Instagram bio fonts with a live bio builder: 150-character counter, name field check, phone preview and templates. Free, no signup.">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta name="author" content="Waqas Tech Finds">
+<link rel="canonical" href="https://ilyasrana535-a11y.github.io/Font-Craft/instagram-bio-fonts.html">
+
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Instagram Bio Fonts – Fancy Bio Builder">
+<meta property="og:description" content="Instagram bio fonts with a live bio builder: 150-character counter, name field check, phone preview and templates. Free, no signup.">
+<meta property="og:url" content="https://ilyasrana535-a11y.github.io/Font-Craft/instagram-bio-fonts.html">
+<meta property="og:site_name" content="Font Craft">
+<meta property="og:image" content="https://ilyasrana535-a11y.github.io/Font-Craft/preview.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Font Craft – Fancy Font Changer, copy and paste aesthetic fonts">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Instagram Bio Fonts – Fancy Bio Builder">
+<meta name="twitter:description" content="Instagram bio fonts with a live bio builder: 150-character counter, name field check, phone preview and templates. Free, no signup.">
+<meta name="twitter:image" content="https://ilyasrana535-a11y.github.io/Font-Craft/preview.png">
+<meta name="twitter:image:alt" content="Font Craft – Fancy Font Changer, copy and paste aesthetic fonts">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Instagram Bio Fonts Builder by Font Craft",
+  "url": "https://ilyasrana535-a11y.github.io/Font-Craft/instagram-bio-fonts.html",
+  "description": "A free bio builder that styles each line of an Instagram bio with Unicode fonts, counts the 150-character limit, checks the Name field and shows a profile preview.",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "All",
+  "browserRequirements": "Requires HTML5 and JavaScript",
+  "author": {
+    "@type": "Organization",
+    "name": "Waqas Tech Finds",
+    "url": "https://waqastechfinds.github.io/"
+  },
+  "offers": {
+    "@type": "Offer",
+    "price": "0.00",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Font Craft",
+      "item": "https://ilyasrana535-a11y.github.io/Font-Craft/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Instagram Bio Fonts",
+      "item": "https://ilyasrana535-a11y.github.io/Font-Craft/instagram-bio-fonts.html"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How many characters can an Instagram bio have?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "An Instagram bio can have up to 150 characters. Spaces, emoji and line breaks all count toward that limit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do emoji and line breaks count in the bio limit?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, every letter, space, emoji and line break counts. Some counters also treat styled letters as more than one character, so leave a few characters spare."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I use a fancy font in my Instagram username?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Instagram usernames only allow letters, numbers, periods and underscores. Use the fancy style in your bio or Name field instead."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which fancy font is best for an Instagram bio?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Bold, Sans Bold and Small Caps are the easiest to read on small screens. Script and Gothic look striking but work better for a short name than a long sentence."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Will a fancy Name field hurt my Instagram search?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It can. Search matches plain letters, so a name written only in a styled font may not match a plain search. Keep your main keyword in plain text in the Name field and style the bio instead."
+      }
+    }
+  ]
+}
+</script>
+
+<style>
+:root{--bg-primary:#030712;--bg-secondary:#111827;--accent-blue:#3b82f6;--accent-purple:#8b5cf6;--text-main:#f9fafb;--text-muted:#9ca3af;--border-color:#374151;--ok:#10b981;--warn:#f59e0b;--bad:#ef4444}
+*{box-sizing:border-box;margin:0;padding:0;font-family:'Inter',system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
+:focus-visible{outline:3px solid var(--accent-blue);outline-offset:2px}
+body{background:var(--bg-primary);color:var(--text-main);min-height:100vh;display:flex;flex-direction:column;justify-content:space-between}
+.wrap{max-width:800px;width:100%;margin:0 auto;padding:0 20px 40px}
+.crumbs{font-size:.85rem;color:var(--text-muted);padding:22px 0 0}
+.crumbs a{color:var(--text-muted)}
+.hero{text-align:center;padding:26px 0 10px}
+.hero h1{font-size:2.3rem;font-weight:800;line-height:1.15;background:linear-gradient(135deg,var(--accent-blue),var(--accent-purple));-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:10px}
+.hero .subtitle{color:var(--text-muted);font-size:1rem;line-height:1.6;max-width:640px;margin:0 auto}
+.byline{font-size:.82rem;color:var(--text-muted);margin-top:12px}
+@media (max-width:600px){.hero{padding-top:14px}.hero h1{font-size:1.75rem}.crumbs{padding-top:70px}}
+.answer-box{background:rgba(139,92,246,.08);border:1px solid rgba(139,92,246,.3);border-left:4px solid var(--accent-purple);border-radius:10px;padding:16px 18px;margin:20px 0;color:var(--text-muted);font-size:.95rem;line-height:1.7}
+.answer-box strong{color:#fff}
+.panel{background:var(--bg-secondary);border:1px solid var(--border-color);border-radius:16px;padding:25px;margin:22px 0;box-shadow:0 20px 40px rgba(0,0,0,.25)}
+.panel h2.sec-title,.sec-title{font-size:1.4rem;color:#fff;margin:0 0 14px;border-left:4px solid var(--accent-blue);padding-left:10px}
+.panel h3,.content h3{font-size:1.05rem;color:#fff;margin:18px 0 8px}
+.content{margin:30px 0 0}
+.content h2{font-size:1.4rem;color:#fff;margin:34px 0 12px;border-left:4px solid var(--accent-blue);padding-left:10px}
+.content p,.panel p.note,.note{color:var(--text-muted);font-size:.95rem;line-height:1.7;margin-bottom:14px}
+.content ul,.content ol{color:var(--text-muted);font-size:.95rem;line-height:1.8;margin:0 0 14px 22px}
+.content li{margin-bottom:6px}
+.content strong{color:#fff}
+.content a,.note a{color:var(--accent-blue)}
+.note{font-size:.85rem;margin:10px 0 0}
+label,.lbl{display:block;font-size:.8rem;text-transform:uppercase;letter-spacing:.05em;color:var(--text-muted);font-weight:700;margin:12px 0 6px}
+input[type=text],textarea,select{width:100%;background:var(--bg-primary);color:var(--text-main);border:2px solid var(--border-color);border-radius:10px;padding:12px 14px;font-size:1.05rem}
+textarea{min-height:110px;resize:vertical;line-height:1.5}
+input[type=text]:focus,textarea:focus,select:focus{border-color:var(--accent-blue)}
+select{padding:10px 12px;font-size:.95rem}
+.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.row>*{flex:1 1 auto}
+.badges{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0}
+.badge{background:rgba(59,130,246,.1);border:1px solid rgba(59,130,246,.25);color:var(--accent-blue);padding:4px 10px;border-radius:20px;font-size:.82rem;font-weight:600}
+.badge.ok{background:rgba(16,185,129,.1);border-color:rgba(16,185,129,.35);color:var(--ok)}
+.badge.warn{background:rgba(245,158,11,.1);border-color:rgba(245,158,11,.35);color:var(--warn)}
+.badge.bad{background:rgba(239,68,68,.1);border-color:rgba(239,68,68,.35);color:var(--bad)}
+.out-list{display:grid;gap:10px;margin-top:14px}
+.out-item{background:var(--bg-primary);border:1px solid var(--border-color);border-radius:10px;padding:12px 14px;display:flex;gap:12px;align-items:center;justify-content:space-between}
+.out-item.sel{border-color:var(--accent-purple)}
+.out-main{min-width:0;flex:1}
+.out-label{display:block;font-size:.72rem;text-transform:uppercase;letter-spacing:.05em;color:var(--text-muted);font-weight:700;margin-bottom:3px}
+.out-text{display:block;font-size:1.2rem;line-height:1.4;overflow-wrap:anywhere;white-space:pre-wrap}
+.out-actions{display:flex;gap:8px;flex-shrink:0}
+.btn-copy,.btn-ghost,.chip{font-size:.88rem;font-weight:700;border-radius:8px;cursor:pointer;padding:9px 16px;border:0}
+.btn-copy{background:linear-gradient(135deg,var(--accent-blue),var(--accent-purple));color:#fff;min-width:78px}
+.btn-copy:hover{opacity:.9}
+.btn-copy.done{background:var(--ok)}
+.btn-ghost,.chip{background:transparent;color:var(--accent-blue);border:1px solid var(--accent-blue)}
+.btn-ghost:hover,.chip:hover{background:rgba(59,130,246,.1)}
+.btn-ghost[aria-pressed=true],.chip[aria-pressed=true]{background:rgba(139,92,246,.2);color:#fff;border-color:var(--accent-purple)}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0}
+.chip{padding:7px 13px;font-size:.82rem}
+.tool-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+.tbl-wrap{overflow-x:auto;margin:0 0 16px}
+table{width:100%;border-collapse:collapse;font-size:.92rem}
+th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--border-color);vertical-align:top;color:var(--text-muted)}
+th{color:#fff;font-weight:700;white-space:nowrap}
+td strong{color:#fff}
+code,.code{background:#1f2937;border:1px solid var(--border-color);padding:1px 6px;border-radius:4px;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.88em;color:#e5e7eb}
+.sample{font-size:1.1em;color:#fff;overflow-wrap:anywhere}
+.example-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin:10px 0 16px}
+.example{background:var(--bg-primary);border:1px solid var(--border-color);border-radius:10px;padding:14px}
+.example .out-label{margin-bottom:6px}
+.example .sample{display:block;font-size:1.15rem;line-height:1.5}
+.faq-item{background:var(--bg-primary);border:1px solid var(--border-color);border-radius:8px;padding:15px;margin-bottom:12px}
+.faq-q{font-size:1rem;font-weight:600;color:#fff;margin-bottom:6px}
+.faq-item p{color:var(--text-muted);font-size:.9rem;line-height:1.55}
+.cta-box{background:rgba(59,130,246,.08);border:1px solid rgba(59,130,246,.3);border-radius:10px;padding:20px;text-align:center;margin:30px 0 10px}
+.cta-box p{color:var(--text-muted);font-size:.95rem;line-height:1.6;margin-bottom:6px}
+.cta-box a.cta{display:inline-block;margin:10px 6px 0;background:linear-gradient(135deg,var(--accent-blue),var(--accent-purple));color:#fff;padding:11px 24px;border-radius:8px;text-decoration:none;font-weight:700;font-size:.92rem}
+.cta-box a.cta.alt{background:transparent;border:1px solid var(--accent-blue);color:var(--accent-blue)}
+.bar{height:8px;background:#1f2937;border-radius:6px;overflow:hidden;margin:6px 0 4px}
+.bar-fill{height:100%;width:0;background:var(--ok);transition:width .15s}
+.bar-fill.warn{background:var(--warn)}.bar-fill.bad{background:var(--bad)}
+/* approximate app previews */
+.pv-title{font-size:.8rem;text-transform:uppercase;letter-spacing:.05em;color:var(--text-muted);font-weight:700;margin:18px 0 8px}
+.dc-pv{background:#313338;color:#dbdee1;border-radius:10px;padding:14px;font-family:system-ui,"Segoe UI",Roboto,sans-serif}
+.dc-row{display:flex;gap:10px;align-items:flex-start}
+.dc-av{width:38px;height:38px;border-radius:50%;background:#5865f2;flex-shrink:0}
+.dc-av.b{background:#3ba55d;width:28px;height:28px}
+.dc-head{display:flex;gap:8px;align-items:baseline;flex-wrap:wrap}
+.dc-name{font-weight:600;color:#fff;overflow-wrap:anywhere}
+.dc-time{font-size:.72rem;color:#949ba4}
+.dc-msg{font-size:.95rem;margin-top:2px}
+.dc-mem{margin-top:12px;padding-top:10px;border-top:1px solid #3f4147;display:flex;gap:10px;align-items:center}
+.ig-pv{background:#000;color:#f5f5f5;border:1px solid #262626;border-radius:14px;padding:16px;max-width:380px;margin:0 auto}
+.ig-top{display:flex;gap:14px;align-items:center;margin-bottom:10px}
+.ig-av{width:62px;height:62px;border-radius:50%;background:linear-gradient(135deg,#f58529,#dd2a7b,#8134af);flex-shrink:0}
+.ig-user{font-size:.85rem;color:#a8a8a8}
+.ig-name{font-weight:700;font-size:.95rem;overflow-wrap:anywhere}
+.ig-bio{font-size:.9rem;line-height:1.4;white-space:pre-wrap;overflow-wrap:anywhere;margin-top:4px}
+.wa-pv{background:#0b141a;border-radius:10px;padding:16px;font-family:system-ui,"Segoe UI",Roboto,sans-serif}
+.wa-bubble{background:#005c4b;color:#e9edef;border-radius:10px 10px 2px 10px;padding:9px 12px;max-width:100%;margin-left:auto;font-size:.95rem;line-height:1.45;overflow-wrap:anywhere;width:fit-content}
+.wa-bubble .ln{white-space:pre-wrap;min-height:1.2em}
+.wa-bubble strong{font-weight:700;color:#fff}
+.wa-bubble .wa-mono{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.9em}
+.wa-bubble .wa-code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.9em;background:rgba(255,255,255,.12);border-radius:4px;padding:0 4px}
+.wa-bubble .wa-q{border-left:3px solid #06cf9c;padding-left:8px;background:rgba(0,0,0,.18);border-radius:3px}
+.wa-bubble .wa-li{display:flex;gap:8px}
+.wa-bubble .wa-li .mk{flex-shrink:0;min-width:1.2em}
+.toolbar{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0}
+.toolbar button{background:#1f2937;color:#fff;border:1px solid var(--border-color);border-radius:8px;padding:8px 12px;font-size:.85rem;font-weight:700;cursor:pointer}
+.toolbar button:hover{border-color:var(--accent-blue)}
+.sympad{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0 10px}
+.sympad button{background:var(--bg-primary);color:#fff;border:1px solid var(--border-color);border-radius:8px;min-width:40px;height:40px;font-size:1.15rem;cursor:pointer}
+.sympad button:hover{border-color:var(--accent-purple)}
+.hint{color:var(--text-muted);font-size:.85rem;margin:4px 0 0}
+.status{font-size:.92rem;margin-top:10px;line-height:1.6;color:var(--text-muted)}
+.status.ok{color:var(--ok)}.status.bad{color:var(--bad)}
+.legend{font-size:.8rem;color:var(--text-muted);margin:8px 0 0}
+/* sidebar + footer (same as the rest of the site) */
+.sidebar-toggle{position:fixed;top:15px;left:15px;z-index:1001;background:var(--bg-secondary);border:1px solid var(--border-color);color:var(--text-main);width:44px;height:44px;border-radius:8px;cursor:pointer;font-size:1.3rem;display:flex;align-items:center;justify-content:center}
+.sidebar-overlay{position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:999;display:none}
+.sidebar-overlay.open{display:block}
+.sidebar{position:fixed;top:0;left:-260px;width:240px;height:100%;background:var(--bg-secondary);border-right:1px solid var(--border-color);z-index:1000;padding:70px 20px 20px;transition:left .3s ease,visibility 0s linear .3s;overflow-y:auto;visibility:hidden}
+.sidebar.open{left:0;visibility:visible;transition:left .3s ease}
+.sidebar .sidebar-heading{display:block;color:var(--text-muted);font-size:.8rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;margin-bottom:10px}
+.sidebar a{display:block;color:var(--text-muted);text-decoration:none;padding:10px 0;font-size:.95rem;border-bottom:1px solid rgba(255,255,255,.05)}
+.sidebar a:hover{color:var(--accent-blue)}
+.sidebar details.sidebar-group{border-bottom:1px solid rgba(255,255,255,.05)}
+.sidebar summary{list-style:none;cursor:pointer;color:var(--text-muted);padding:10px 0;font-size:.95rem;display:flex;justify-content:space-between;align-items:center}
+.sidebar summary::-webkit-details-marker{display:none}
+.sidebar summary::after{content:"\25BE";transition:transform .2s}
+.sidebar details[open] summary::after{transform:rotate(180deg)}
+.sidebar summary:hover{color:var(--accent-blue)}
+.sidebar details a{padding-left:14px;font-size:.9rem}
+.sidebar details a:last-child{border-bottom:0}
+.sidebar a[aria-current=page]{color:#fff;font-weight:600}
+footer{background:var(--bg-secondary);border-top:1px solid var(--border-color);padding:25px 20px;text-align:center;font-size:.85rem;color:var(--text-muted)}
+footer a{color:var(--text-muted);text-decoration:none;margin:0 10px}
+footer a:hover{color:var(--accent-blue)}
+footer .footer-contact{margin-top:12px}
+footer .footer-contact a{margin:0;text-decoration:underline}
+</style>
+</head>
+<body>
+<button class="sidebar-toggle" onclick="toggleSidebar()" aria-label="Open navigation menu" aria-expanded="false" aria-controls="sideNav">☰</button>
+<div class="sidebar-overlay" id="sideOverlay" onclick="toggleSidebar(true)"></div>
+<nav class="sidebar" id="sideNav" aria-label="Site navigation">
+    <span class="sidebar-heading">Navigate</span>
+    <a href="./#tool">✨ Font Changer Tool</a>
+    <details class="sidebar-group" open>
+        <summary>🧰 More tools</summary>
+        <a href="discord-font-changer.html">Discord Font Changer</a>
+        <a href="aesthetic-title-generator.html">Aesthetic Title Generator</a>
+        <a href="unicode-font-changer.html">Unicode Font Changer</a>
+        <a href="instagram-bio-fonts.html" aria-current="page">Instagram Bio Fonts</a>
+        <a href="whatsapp-font-changer.html">WhatsApp Font Changer</a>
+    </details>
+    <a href="./#about">📖 About This Tool</a>
+    <a href="./#how-to-use">🧭 How To Use</a>
+    <a href="./#styles">🔤 Font Styles</a>
+    <a href="./#platforms">📲 Instagram, TikTok &amp; More</a>
+    <a href="./#faq">❓ FAQs</a>
+    <a href="blog.html">📰 Blog: Change Fonts Guide</a>
+    <span class="sidebar-heading" style="margin-top:20px;">Legal</span>
+    <a href="privacy.html">🔒 Privacy Policy</a>
+    <a href="terms.html">📄 Terms of Service</a>
+    <a href="dmca.html">⚖️ DMCA</a>
+    <span class="sidebar-heading" style="margin-top:20px;">More From Us</span>
+    <a href="https://waqastechfinds.github.io/" target="_blank" rel="noopener">📅 The Clarity Planner</a>
+    <a href="https://waqastechfinds.blogspot.com/" target="_blank" rel="noopener">📱 Tech Finds Blog</a>
+</nav>
+
+<main class="wrap">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="./">Font Craft</a> › Instagram Bio Fonts</nav>
+
+    <header class="hero">
+        <h1>Instagram Bio Fonts</h1>
+        <p class="subtitle">Build a fancy Instagram bio line by line, with a 150-character counter, a phone preview and ready templates.</p>
+        <p class="byline">By <strong>Waqas Tech Finds</strong> · Updated <time datetime="2026-10-14">October 14, 2026</time></p>
+    </header>
+
+    <div class="answer-box"><strong>Quick answer:</strong> An Instagram bio can have up to <strong>150 characters</strong>, and Instagram has no font setting, so you paste styled text instead. Build your bio above, check the counter, press Copy and paste it under Edit Profile. Style your name or tagline, but keep your main keyword in plain text in the Name field, because that field is searchable.</div>
+
+    <section class="panel" id="tool" aria-labelledby="tool-h">
+        <h2 class="sec-title" id="tool-h">Instagram Bio Builder</h2>
+        <span class="lbl">Start from a template</span>
+        <div class="chips" id="igTpls" role="group" aria-label="Bio templates"></div>
+
+        <div class="row">
+            <div style="flex:3 1 220px"><label for="igName">Name field</label><input type="text" id="igName" maxlength="80" autocomplete="off" spellcheck="false"></div>
+            <div style="flex:1 1 140px"><label for="igNameS">Style</label><select id="igNameS"><option value="plain" selected>Plain</option><option value="bold">Bold</option><option value="sansBold">Sans Bold</option><option value="italic">Italic</option><option value="boldItalic">Bold Italic</option><option value="script">Script</option><option value="boldScript">Bold Script</option><option value="gothic">Gothic</option><option value="doubleStruck">Double-Struck</option><option value="mono">Monospace</option><option value="smallCaps">Small Caps</option><option value="fullwidth">Fullwidth</option></select></div>
+        </div>
+        <div class="badges" aria-live="polite"><span class="badge" id="igNameCount">0 / 30</span><span class="badge">The Name field is searchable</span></div>
+
+        <div class="row">
+            <div style="flex:3 1 220px"><label for="igL1">Bio line 1</label><input type="text" id="igL1" maxlength="150" autocomplete="off" spellcheck="false"></div>
+            <div style="flex:1 1 140px"><label for="igS1">Style</label><select id="igS1"><option value="plain" selected>Plain</option><option value="bold">Bold</option><option value="sansBold">Sans Bold</option><option value="italic">Italic</option><option value="boldItalic">Bold Italic</option><option value="script">Script</option><option value="boldScript">Bold Script</option><option value="gothic">Gothic</option><option value="doubleStruck">Double-Struck</option><option value="mono">Monospace</option><option value="smallCaps">Small Caps</option><option value="fullwidth">Fullwidth</option></select></div>
+        </div>
+        <div class="row">
+            <div style="flex:3 1 220px"><label for="igL2">Bio line 2</label><input type="text" id="igL2" maxlength="150" autocomplete="off" spellcheck="false"></div>
+            <div style="flex:1 1 140px"><label for="igS2">Style</label><select id="igS2"><option value="plain" selected>Plain</option><option value="bold">Bold</option><option value="sansBold">Sans Bold</option><option value="italic">Italic</option><option value="boldItalic">Bold Italic</option><option value="script">Script</option><option value="boldScript">Bold Script</option><option value="gothic">Gothic</option><option value="doubleStruck">Double-Struck</option><option value="mono">Monospace</option><option value="smallCaps">Small Caps</option><option value="fullwidth">Fullwidth</option></select></div>
+        </div>
+        <div class="row">
+            <div style="flex:3 1 220px"><label for="igL3">Bio line 3</label><input type="text" id="igL3" maxlength="150" autocomplete="off" spellcheck="false"></div>
+            <div style="flex:1 1 140px"><label for="igS3">Style</label><select id="igS3"><option value="plain" selected>Plain</option><option value="bold">Bold</option><option value="sansBold">Sans Bold</option><option value="italic">Italic</option><option value="boldItalic">Bold Italic</option><option value="script">Script</option><option value="boldScript">Bold Script</option><option value="gothic">Gothic</option><option value="doubleStruck">Double-Struck</option><option value="mono">Monospace</option><option value="smallCaps">Small Caps</option><option value="fullwidth">Fullwidth</option></select></div>
+        </div>
+        <div class="row">
+            <div style="flex:3 1 220px"><label for="igL4">Bio line 4</label><input type="text" id="igL4" maxlength="150" autocomplete="off" spellcheck="false"></div>
+            <div style="flex:1 1 140px"><label for="igS4">Style</label><select id="igS4"><option value="plain" selected>Plain</option><option value="bold">Bold</option><option value="sansBold">Sans Bold</option><option value="italic">Italic</option><option value="boldItalic">Bold Italic</option><option value="script">Script</option><option value="boldScript">Bold Script</option><option value="gothic">Gothic</option><option value="doubleStruck">Double-Struck</option><option value="mono">Monospace</option><option value="smallCaps">Small Caps</option><option value="fullwidth">Fullwidth</option></select></div>
+        </div>
+
+        <div class="badges" aria-live="polite">
+            <span class="badge" id="igCount">0 / 150</span>
+            <span class="badge" id="igLeft">150 left</span>
+        </div>
+        <div class="bar" aria-hidden="true"><div class="bar-fill" id="igBar"></div></div>
+
+        <div class="tool-actions">
+            <button type="button" class="btn-copy" id="igCopyBio">Copy bio</button>
+            <button type="button" class="btn-ghost" id="igCopyName">Copy name</button>
+        </div>
+
+        <div class="pv-title">Preview (approximate)</div>
+        <div class="ig-pv" aria-label="Approximate preview of an Instagram profile">
+            <div class="ig-top"><span class="ig-av" aria-hidden="true"></span><div><div class="ig-name" id="igPvName">Your name</div><div class="ig-user">@yourusername</div></div></div>
+            <div class="ig-bio" id="igPvBio">Your bio appears here</div>
+        </div>
+        <p class="note">The preview is a rough guide, not the real app. Instagram's own counter has the final say, and some counters treat styled letters as more than one character, so leave a few characters spare.</p>
+    </section>
+
+    <div class="content">
+        <h2 id="rules">Instagram Bio Rules to Know</h2>
+        <div class="tbl-wrap"><table>
+            <thead><tr><th>Field</th><th>Limit</th><th>Fancy fonts?</th></tr></thead>
+            <tbody>
+                <tr><td><strong>Bio</strong></td><td>150 characters</td><td>Yes. Spaces, emoji and line breaks all count.</td></tr>
+                <tr><td><strong>Name field</strong></td><td>About 30 characters</td><td>Yes, but it is searchable, so keep a plain keyword.</td></tr>
+                <tr><td><strong>Username</strong></td><td>30 characters</td><td>No. Only letters, numbers, periods and underscores.</td></tr>
+            </tbody>
+        </table></div>
+
+        <h2 id="paste">How to Paste a Fancy Bio</h2>
+        <ol>
+            <li>Build and copy your bio with the builder above.</li>
+            <li>Open Instagram, go to your profile and tap <strong>Edit profile</strong>.</li>
+            <li>Tap the <strong>Bio</strong> field, paste, and tap <strong>Done</strong>.</li>
+            <li>Check how it looks on your profile. If a symbol shows as a box, switch to Bold or Sans Bold.</li>
+        </ol>
+
+        <h2 id="searchable">Fancy Font or Search? Do Both</h2>
+        <p>Instagram search matches plain letters, and the Name field is the part of your profile that helps people find you. If you write the Name field only in a fancy style, a search for the plain word may not match it. A simple approach is to keep your main keyword in plain text in the Name field and use the fancy style on the bio, where it catches the eye but search matters less.</p>
+
+        <h2 id="formulas">Three Bio Formulas That Fit in 150 Characters</h2>
+        <ul>
+            <li><strong>Who + what + action:</strong> your role, what you share, and one thing you want visitors to do.</li>
+            <li><strong>Name + vibe + place:</strong> good for personal profiles, with three or four short words.</li>
+            <li><strong>Offer + proof + link cue:</strong> for small shops, such as what you sell, when you ship and "order below".</li>
+        </ul>
+        <p>Use one style for the name line and a quieter one for the tagline. Two styles are plenty, and emoji make good bullets.</p>
+
+        <h2 id="examples">Live Bio Examples</h2>
+        <div class="example-grid">
+            <div class="example"><span class="out-label">Personal</span><span class="sample" style="white-space:pre-wrap"><span data-style="bold">Sara Khan</span>
+<span data-style="smallCaps">coffee · books · travel</span></span></div>
+            <div class="example"><span class="out-label">Creator or shop</span><span class="sample" style="white-space:pre-wrap"><span data-style="boldScript">Luna Studio</span>
+<span data-style="italic">Handmade candles and gifts</span></span></div>
+            <div class="example"><span class="out-label">Gaming</span><span class="sample" style="white-space:pre-wrap"><span data-style="boldGothic">Night Raven</span>
+<span data-style="sansBold">Streams on weekends</span></span></div>
+        </div>
+
+        <h2 id="tips">Tips for a Readable Bio</h2>
+        <ul>
+            <li><strong>Pick readable styles.</strong> Bold, Sans Bold and Small Caps stay clear on small phone screens. Script and Gothic are better for a short name than for a whole sentence.</li>
+            <li><strong>Leave room.</strong> Some counters treat styled letters as more than one character. If Instagram rejects your bio, remove a few letters.</li>
+            <li><strong>Use line breaks on purpose.</strong> They count as characters, so short lines cost more than you think.</li>
+            <li><strong>Mind accessibility.</strong> Screen readers can read styled letters as odd symbols, so put important details in plain text.</li>
+        </ul>
+
+        <h2 id="faq">Frequently Asked Questions</h2>
+        <div class="faq-item">
+            <div class="faq-q">How many characters can an Instagram bio have?</div>
+            <p>An Instagram bio can have up to 150 characters. Spaces, emoji and line breaks all count toward that limit.</p>
+        </div>
+        <div class="faq-item">
+            <div class="faq-q">Do emoji and line breaks count in the bio limit?</div>
+            <p>Yes, every letter, space, emoji and line break counts. Some counters also treat styled letters as more than one character, so leave a few characters spare.</p>
+        </div>
+        <div class="faq-item">
+            <div class="faq-q">Can I use a fancy font in my Instagram username?</div>
+            <p>No. Instagram usernames only allow letters, numbers, periods and underscores. Use the fancy style in your bio or Name field instead.</p>
+        </div>
+        <div class="faq-item">
+            <div class="faq-q">Which fancy font is best for an Instagram bio?</div>
+            <p>Bold, Sans Bold and Small Caps are the easiest to read on small screens. Script and Gothic look striking but work better for a short name than a long sentence.</p>
+        </div>
+        <div class="faq-item">
+            <div class="faq-q">Will a fancy Name field hurt my Instagram search?</div>
+            <p>It can. Search matches plain letters, so a name written only in a styled font may not match a plain search. Keep your main keyword in plain text in the Name field and style the bio instead.</p>
+        </div>
+
+        <div class="cta-box">
+            <p><strong>Want every style in one place?</strong></p>
+            <p>This page shows the styles and tools that matter most for Instagram bios. The full Font Craft tool has all 15 font styles, a Title Framer and a Description Editor.</p>
+            <a class="cta" href="./#tool">Open the full Font Changer →</a>
+            <a class="cta alt" href="blog.html">Read the guide</a>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <a href="./">Home</a>
+    <a href="blog.html">Guide</a>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="terms.html">Terms of Service</a>
+    <a href="dmca.html">DMCA</a>
+    <a href="mailto:waqastechfinds@gmail.com">Contact Us</a>
+    <p class="footer-contact">Contact: <a href="mailto:waqastechfinds@gmail.com">waqastechfinds@gmail.com</a></p>
+    <p style="margin-top:12px;opacity:.7;">&copy; 2026 Waqas Tech Finds. All Rights Reserved.</p>
+</footer>
+
+<script>
+
+const $ = id => document.getElementById(id);
+const cpLen = s => Array.from(s).length;
+
+function toggleSidebar(forceClose) {
+    const nav = $('sideNav'), overlay = $('sideOverlay');
+    const toggleBtn = document.querySelector('.sidebar-toggle');
+    const willOpen = forceClose === true ? false : !nav.classList.contains('open');
+    nav.classList.toggle('open', willOpen);
+    overlay.classList.toggle('open', willOpen);
+    toggleBtn.setAttribute('aria-expanded', willOpen ? 'true' : 'false');
+    toggleBtn.setAttribute('aria-label', willOpen ? 'Close navigation menu' : 'Open navigation menu');
+    if (willOpen) { const first = nav.querySelector('a'); if (first) first.focus(); }
+    else if (nav.contains(document.activeElement)) { toggleBtn.focus(); }
+}
+document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && $('sideNav').classList.contains('open')) toggleSidebar(true);
+});
+
+function buildMap(upperStart, lowerStart, digitStart, exceptions) {
+    const dict = {};
+    for (let i = 0; i < 26; i++) {
+        const up = String.fromCharCode(65 + i), low = String.fromCharCode(97 + i);
+        if (upperStart !== null) dict[up] = (exceptions && exceptions[up]) || String.fromCodePoint(upperStart + i);
+        if (lowerStart !== null) dict[low] = (exceptions && exceptions[low]) || String.fromCodePoint(lowerStart + i);
+    }
+    if (digitStart !== null) { for (let i = 0; i < 10; i++) dict[String(i)] = String.fromCodePoint(digitStart + i); }
+    return dict;
+}
+function buildBubbles() {
+    const dict = buildMap(0x24B6, 0x24D0, null);
+    dict['0'] = '\u24EA';
+    for (let i = 1; i <= 9; i++) dict[String(i)] = String.fromCodePoint(0x2460 + i - 1);
+    return dict;
+}
+function buildSmallCaps() {
+    const from = 'abcdefghijklmnopqrstuvwxyz';
+    const to = Array.from('\u1D00\u0299\u1D04\u1D05\u1D07\uA730\u0262\u029C\u026A\u1D0A\u1D0B\u029F\u1D0D\u0274\u1D0F\u1D18\u01EB\u0280\uA731\u1D1B\u1D1C\u1D20\u1D21x\u028F\u1D22');
+    const dict = {};
+    for (let i = 0; i < 26; i++) { dict[from[i]] = to[i]; dict[from[i].toUpperCase()] = to[i]; }
+    return dict;
+}
+const maps = {
+    script: buildMap(0x1D49C, 0x1D4B6, null, { B: '\u212C', E: '\u2130', F: '\u2131', H: '\u210B', I: '\u2110', L: '\u2112', M: '\u2133', R: '\u211B', e: '\u212F', g: '\u210A', o: '\u2134' }),
+    boldScript: buildMap(0x1D4D0, 0x1D4EA, null),
+    gothic: buildMap(0x1D504, 0x1D51E, null, { C: '\u212D', H: '\u210C', I: '\u2111', R: '\u211C', Z: '\u2128' }),
+    boldGothic: buildMap(0x1D56C, 0x1D586, null),
+    boldItalic: buildMap(0x1D468, 0x1D482, null),
+    italic: buildMap(0x1D434, 0x1D44E, null, { h: '\u210E' }),
+    bold: buildMap(0x1D400, 0x1D41A, 0x1D7CE),
+    sansBold: buildMap(0x1D5D4, 0x1D5EE, 0x1D7EC),
+    doubleStruck: buildMap(0x1D538, 0x1D552, 0x1D7D8, { C: '\u2102', H: '\u210D', N: '\u2115', P: '\u2119', Q: '\u211A', R: '\u211D', Z: '\u2124' }),
+    mono: buildMap(0x1D670, 0x1D68A, 0x1D7F6),
+    bubbles: buildBubbles(),
+    squares: buildMap(0x1F130, 0x1F130, null),
+    smallCaps: buildSmallCaps(),
+    fullwidth: buildMap(0xFF21, 0xFF41, 0xFF10)
+};
+function mapConverter(str, dict) {
+    return Array.from(str).map(c => (dict[c] !== undefined ? dict[c] : c)).join('');
+}
+const STYLE_LIST = [
+    { key: 'script', title: 'Script', fn: t => mapConverter(t, maps.script) },
+    { key: 'boldScript', title: 'Bold Script', fn: t => mapConverter(t, maps.boldScript) },
+    { key: 'gothic', title: 'Gothic', fn: t => mapConverter(t, maps.gothic) },
+    { key: 'boldGothic', title: 'Bold Gothic', fn: t => mapConverter(t, maps.boldGothic) },
+    { key: 'boldItalic', title: 'Bold Italic', fn: t => mapConverter(t, maps.boldItalic) },
+    { key: 'italic', title: 'Italic', fn: t => mapConverter(t, maps.italic) },
+    { key: 'bold', title: 'Bold', fn: t => mapConverter(t, maps.bold) },
+    { key: 'sansBold', title: 'Sans Bold', fn: t => mapConverter(t, maps.sansBold) },
+    { key: 'doubleStruck', title: 'Double-Struck', fn: t => mapConverter(t, maps.doubleStruck) },
+    { key: 'mono', title: 'Monospace', fn: t => mapConverter(t, maps.mono) },
+    { key: 'bubbles', title: 'Bubble', fn: t => mapConverter(t, maps.bubbles) },
+    { key: 'squares', title: 'Squares', fn: t => mapConverter(t, maps.squares) },
+    { key: 'smallCaps', title: 'Small Caps', fn: t => mapConverter(t, maps.smallCaps) },
+    { key: 'fullwidth', title: 'Fullwidth', fn: t => mapConverter(t, maps.fullwidth) },
+    { key: 'vaporwave', title: 'Vaporwave Spacing', fn: t => Array.from(t).join(' ') }
+];
+const STYLE_BY_KEY = {};
+STYLE_LIST.forEach(s => { STYLE_BY_KEY[s.key] = s; });
+function styleText(key, text) {
+    const s = STYLE_BY_KEY[key];
+    return s ? s.fn(text) : text;
+}
+
+function legacyCopy(text) {
+    return new Promise((resolve, reject) => {
+        const ta = document.createElement('textarea');
+        ta.value = text; ta.setAttribute('readonly', '');
+        ta.style.position = 'fixed'; ta.style.top = '0'; ta.style.left = '-9999px'; ta.style.opacity = '0';
+        document.body.appendChild(ta);
+        ta.focus(); ta.select(); ta.setSelectionRange(0, text.length);
+        let ok = false;
+        try { ok = document.execCommand('copy'); } catch (e) { ok = false; }
+        document.body.removeChild(ta);
+        if (ok) resolve(); else reject(new Error('copy failed'));
+    });
+}
+function copyToClipboard(text) {
+    if (navigator.clipboard && window.isSecureContext) {
+        return navigator.clipboard.writeText(text).catch(() => legacyCopy(text));
+    }
+    return legacyCopy(text);
+}
+function copyWithFeedback(text, btn, label) {
+    const original = label || 'Copy';
+    copyToClipboard(text).then(() => {
+        btn.textContent = 'Copied!'; btn.classList.add('done');
+        setTimeout(() => { btn.textContent = original; btn.classList.remove('done'); }, 1200);
+    }).catch(() => {
+        btn.textContent = 'Copy failed';
+        setTimeout(() => { btn.textContent = original; }, 1500);
+    });
+}
+function el(tag, cls, text) {
+    const n = document.createElement(tag);
+    if (cls) n.className = cls;
+    if (text !== undefined) n.textContent = text;
+    return n;
+}
+function fillSamples() {
+    document.querySelectorAll('[data-style]').forEach(n => {
+        const s = STYLE_BY_KEY[n.getAttribute('data-style')];
+        if (s) n.textContent = s.fn(n.textContent);
+    });
+}
+
+
+const IG_TPLS = [
+    { n: 'Personal', name: ['Sara Khan', 'bold'], lines: [['coffee · books · travel', 'smallCaps'], ['Karachi, Pakistan', 'plain'], ['', 'plain'], ['', 'plain']] },
+    { n: 'Creator', name: ['Luna Studio', 'boldScript'], lines: [['Handmade candles and gifts', 'italic'], ['New drops every Friday', 'plain'], ['Order below ↓', 'plain'], ['', 'plain']] },
+    { n: 'Small business', name: ['Brew Lab Coffee', 'sansBold'], lines: [['Freshly roasted beans', 'plain'], ['Open daily, 8am to 8pm', 'plain'], ['DM to order ☕', 'plain'], ['', 'plain']] },
+    { n: 'Artist', name: ['Ayaan Ali', 'boldScript'], lines: [['Photographer and visual storyteller', 'smallCaps'], ['Open for bookings', 'plain'], ['', 'plain'], ['', 'plain']] },
+    { n: 'Gamer', name: ['Night Raven', 'boldGothic'], lines: [['FPS · Streams on weekends', 'plain'], ['Add me ⚔', 'plain'], ['', 'plain'], ['', 'plain']] }
+];
+
+function igFill(t) {
+    $('igName').value = t.name[0]; $('igNameS').value = t.name[1];
+    t.lines.forEach((l, i) => { $('igL' + (i + 1)).value = l[0]; $('igS' + (i + 1)).value = l[1]; });
+    igRender();
+}
+function igBio() {
+    const parts = [];
+    for (let i = 1; i <= 4; i++) {
+        const v = $('igL' + i).value;
+        if (v.trim() !== '') parts.push(styleText($('igS' + i).value, v));
+    }
+    return parts.join('\n');
+}
+function igNameOut() { return styleText($('igNameS').value, $('igName').value); }
+
+function igRender() {
+    const bio = igBio();
+    const name = igNameOut();
+    const n = cpLen(bio);
+    const nn = cpLen(name);
+    const count = $('igCount'), left = $('igLeft'), bar = $('igBar');
+    count.textContent = n + ' / 150';
+    const remain = 150 - n;
+    left.textContent = remain >= 0 ? remain + ' left' : Math.abs(remain) + ' over';
+    const cls = n > 150 ? 'bad' : (n > 130 ? 'warn' : 'ok');
+    count.className = 'badge ' + (cls === 'ok' ? 'ok' : cls);
+    left.className = 'badge ' + (cls === 'ok' ? 'ok' : cls);
+    bar.style.width = Math.min(100, n / 150 * 100) + '%';
+    bar.className = 'bar-fill' + (cls === 'ok' ? '' : ' ' + cls);
+    const nc = $('igNameCount');
+    nc.textContent = nn + ' / 30';
+    nc.className = 'badge ' + (nn > 30 ? 'bad' : (nn > 26 ? 'warn' : 'ok'));
+    $('igPvName').textContent = name.trim() === '' ? 'Your name' : name;
+    $('igPvBio').textContent = bio === '' ? 'Your bio appears here' : bio;
+}
+
+(function initInstagram() {
+    const wrap = $('igTpls');
+    IG_TPLS.forEach((t, i) => {
+        const b = el('button', 'chip', t.n);
+        b.type = 'button';
+        b.addEventListener('click', () => {
+            wrap.querySelectorAll('button').forEach(x => x.setAttribute('aria-pressed', x === b ? 'true' : 'false'));
+            igFill(t);
+        });
+        b.setAttribute('aria-pressed', 'false');
+        wrap.appendChild(b);
+    });
+    ['igName', 'igNameS', 'igL1', 'igL2', 'igL3', 'igL4', 'igS1', 'igS2', 'igS3', 'igS4'].forEach(id => {
+        $(id).addEventListener('input', igRender);
+        $(id).addEventListener('change', igRender);
+    });
+    $('igCopyBio').addEventListener('click', () => copyWithFeedback(igBio(), $('igCopyBio'), 'Copy bio'));
+    $('igCopyName').addEventListener('click', () => copyWithFeedback(igNameOut(), $('igCopyName'), 'Copy name'));
+    igFill(IG_TPLS[0]);
+    wrap.querySelector('button').setAttribute('aria-pressed', 'true');
+    fillSamples();
+})();
+
+</script>
+</body>
+</html>
