@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Discord Font Changer – Fancy Names &amp; Text | Font Craft</title>
+<meta name="description" content="Discord font changer for names, nicknames and messages. Preview fancy text, check the 32-character limit and test usernames. Free, no signup.">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta name="author" content="Waqas Tech Finds">
+<link rel="canonical" href="https://ilyasrana535-a11y.github.io/Font-Craft/discord-font-changer.html">
+
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Discord Font Changer – Fancy Names &amp; Text">
+<meta property="og:description" content="Discord font changer for names, nicknames and messages. Preview fancy text, check the 32-character limit and test usernames. Free, no signup.">
+<meta property="og:url" content="https://ilyasrana535-a11y.github.io/Font-Craft/discord-font-changer.html">
+<meta property="og:site_name" content="Font Craft">
+<meta property="og:image" content="https://ilyasrana535-a11y.github.io/Font-Craft/preview.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Font Craft – Fancy Font Changer, copy and paste aesthetic fonts">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Discord Font Changer – Fancy Names &amp; Text">
+<meta name="twitter:description" content="Discord font changer for names, nicknames and messages. Preview fancy text, check the 32-character limit and test usernames. Free, no signup.">
+<meta name="twitter:image" content="https://ilyasrana535-a11y.github.io/Font-Craft/preview.png">
+<meta name="twitter:image:alt" content="Font Craft – Fancy Font Changer, copy and paste aesthetic fonts">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Discord Font Changer by Font Craft",
+  "url": "https://ilyasrana535-a11y.github.io/Font-Craft/discord-font-changer.html",
+  "description": "A free tool that converts text into styled Unicode for Discord display names, nicknames and messages, with a preview, a 32-character counter and a username rules checker.",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "All",
+  "browserRequirements": "Requires HTML5 and JavaScript",
+  "author": {
+    "@type": "Organization",
+    "name": "Waqas Tech Finds",
+    "url": "https://waqastechfinds.github.io/"
+  },
+  "offers": {
+    "@type": "Offer",
+    "price": "0.00",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Font Craft",
+      "item": "https://ilyasrana535-a11y.github.io/Font-Craft/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Discord Font Changer",
+      "item": "https://ilyasrana535-a11y.github.io/Font-Craft/discord-font-changer.html"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Can I change Discord's font?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not officially. Discord uses its own font and has no font setting. You can scale chat text under Accessibility settings, and you can paste styled Unicode text into names and messages."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I use a fancy font in my Discord username?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. The unique username only allows lowercase Latin letters, numbers, underscores and periods. Put the fancy style in your display name or server nickname."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long can a Discord display name be?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A display name can be 1 to 32 characters long and can include special characters and emoji."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does my styled name show boxes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The device or app has no symbol for that character. It is rare on modern phones, but if it happens, try Bold or Sans Bold."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Will other people see my styled name on mobile?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Styled text is ordinary Unicode text, so it shows on phones and computers that have the symbols. Very old devices may show boxes for a few styles."
+      }
+    }
+  ]
+}
+</script>
+
+<style>
+:root{--bg-primary:#030712;--bg-secondary:#111827;--accent-blue:#3b82f6;--accent-purple:#8b5cf6;--text-main:#f9fafb;--text-muted:#9ca3af;--border-color:#374151;--ok:#10b981;--warn:#f59e0b;--bad:#ef4444}
+*{box-sizing:border-box;margin:0;padding:0;font-family:'Inter',system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
+:focus-visible{outline:3px solid var(--accent-blue);outline-offset:2px}
+body{background:var(--bg-primary);color:var(--text-main);min-height:100vh;display:flex;flex-direction:column;justify-content:space-between}
+.wrap{max-width:800px;width:100%;margin:0 auto;padding:0 20px 40px}
+.crumbs{font-size:.85rem;color:var(--text-muted);padding:22px 0 0}
+.crumbs a{color:var(--text-muted)}
+.hero{text-align:center;padding:26px 0 10px}
+.hero h1{font-size:2.3rem;font-weight:800;line-height:1.15;background:linear-gradient(135deg,var(--accent-blue),var(--accent-purple));-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:10px}
+.hero .subtitle{color:var(--text-muted);font-size:1rem;line-height:1.6;max-width:640px;margin:0 auto}
+.byline{font-size:.82rem;color:var(--text-muted);margin-top:12px}
+@media (max-width:600px){.hero{padding-top:14px}.hero h1{font-size:1.75rem}.crumbs{padding-top:70px}}
+.answer-box{background:rgba(139,92,246,.08);border:1px solid rgba(139,92,246,.3);border-left:4px solid var(--accent-purple);border-radius:10px;padding:16px 18px;margin:20px 0;color:var(--text-muted);font-size:.95rem;line-height:1.7}
+.answer-box strong{color:#fff}
+.panel{background:var(--bg-secondary);border:1px solid var(--border-color);border-radius:16px;padding:25px;margin:22px 0;box-shadow:0 20px 40px rgba(0,0,0,.25)}
+.panel h2.sec-title,.sec-title{font-size:1.4rem;color:#fff;margin:0 0 14px;border-left:4px solid var(--accent-blue);padding-left:10px}
+.panel h3,.content h3{font-size:1.05rem;color:#fff;margin:18px 0 8px}
+.content{margin:30px 0 0}
+.content h2{font-size:1.4rem;color:#fff;margin:34px 0 12px;border-left:4px solid var(--accent-blue);padding-left:10px}
+.content p,.panel p.note,.note{color:var(--text-muted);font-size:.95rem;line-height:1.7;margin-bottom:14px}
+.content ul,.content ol{color:var(--text-muted);font-size:.95rem;line-height:1.8;margin:0 0 14px 22px}
+.content li{margin-bottom:6px}
+.content strong{color:#fff}
+.content a,.note a{color:var(--accent-blue)}
+.note{font-size:.85rem;margin:10px 0 0}
+label,.lbl{display:block;font-size:.8rem;text-transform:uppercase;letter-spacing:.05em;color:var(--text-muted);font-weight:700;margin:12px 0 6px}
+input[type=text],textarea,select{width:100%;background:var(--bg-primary);color:var(--text-main);border:2px solid var(--border-color);border-radius:10px;padding:12px 14px;font-size:1.05rem}
+textarea{min-height:110px;resize:vertical;line-height:1.5}
+input[type=text]:focus,textarea:focus,select:focus{border-color:var(--accent-blue)}
+select{padding:10px 12px;font-size:.95rem}
+.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.row>*{flex:1 1 auto}
+.badges{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0}
+.badge{background:rgba(59,130,246,.1);border:1px solid rgba(59,130,246,.25);color:var(--accent-blue);padding:4px 10px;border-radius:20px;font-size:.82rem;font-weight:600}
+.badge.ok{background:rgba(16,185,129,.1);border-color:rgba(16,185,129,.35);color:var(--ok)}
+.badge.warn{background:rgba(245,158,11,.1);border-color:rgba(245,158,11,.35);color:var(--warn)}
+.badge.bad{background:rgba(239,68,68,.1);border-color:rgba(239,68,68,.35);color:var(--bad)}
+.out-list{display:grid;gap:10px;margin-top:14px}
+.out-item{background:var(--bg-primary);border:1px solid var(--border-color);border-radius:10px;padding:12px 14px;display:flex;gap:12px;align-items:center;justify-content:space-between}
+.out-item.sel{border-color:var(--accent-purple)}
+.out-main{min-width:0;flex:1}
+.out-label{display:block;font-size:.72rem;text-transform:uppercase;letter-spacing:.05em;color:var(--text-muted);font-weight:700;margin-bottom:3px}
+.out-text{display:block;font-size:1.2rem;line-height:1.4;overflow-wrap:anywhere;white-space:pre-wrap}
+.out-actions{display:flex;gap:8px;flex-shrink:0}
+.btn-copy,.btn-ghost,.chip{font-size:.88rem;font-weight:700;border-radius:8px;cursor:pointer;padding:9px 16px;border:0}
+.btn-copy{background:linear-gradient(135deg,var(--accent-blue),var(--accent-purple));color:#fff;min-width:78px}
+.btn-copy:hover{opacity:.9}
+.btn-copy.done{background:var(--ok)}
+.btn-ghost,.chip{background:transparent;color:var(--accent-blue);border:1px solid var(--accent-blue)}
+.btn-ghost:hover,.chip:hover{background:rgba(59,130,246,.1)}
+.btn-ghost[aria-pressed=true],.chip[aria-pressed=true]{background:rgba(139,92,246,.2);color:#fff;border-color:var(--accent-purple)}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0}
+.chip{padding:7px 13px;font-size:.82rem}
+.tool-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+.tbl-wrap{overflow-x:auto;margin:0 0 16px}
+table{width:100%;border-collapse:collapse;font-size:.92rem}
+th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--border-color);vertical-align:top;color:var(--text-muted)}
+th{color:#fff;font-weight:700;white-space:nowrap}
+td strong{color:#fff}
+code,.code{background:#1f2937;border:1px solid var(--border-color);padding:1px 6px;border-radius:4px;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.88em;color:#e5e7eb}
+.sample{font-size:1.1em;color:#fff;overflow-wrap:anywhere}
+.example-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin:10px 0 16px}
+.example{background:var(--bg-primary);border:1px solid var(--border-color);border-radius:10px;padding:14px}
+.example .out-label{margin-bottom:6px}
+.example .sample{display:block;font-size:1.15rem;line-height:1.5}
+.faq-item{background:var(--bg-primary);border:1px solid var(--border-color);border-radius:8px;padding:15px;margin-bottom:12px}
+.faq-q{font-size:1rem;font-weight:600;color:#fff;margin-bottom:6px}
+.faq-item p{color:var(--text-muted);font-size:.9rem;line-height:1.55}
+.cta-box{background:rgba(59,130,246,.08);border:1px solid rgba(59,130,246,.3);border-radius:10px;padding:20px;text-align:center;margin:30px 0 10px}
+.cta-box p{color:var(--text-muted);font-size:.95rem;line-height:1.6;margin-bottom:6px}
+.cta-box a.cta{display:inline-block;margin:10px 6px 0;background:linear-gradient(135deg,var(--accent-blue),var(--accent-purple));color:#fff;padding:11px 24px;border-radius:8px;text-decoration:none;font-weight:700;font-size:.92rem}
+.cta-box a.cta.alt{background:transparent;border:1px solid var(--accent-blue);color:var(--accent-blue)}
+.bar{height:8px;background:#1f2937;border-radius:6px;overflow:hidden;margin:6px 0 4px}
+.bar-fill{height:100%;width:0;background:var(--ok);transition:width .15s}
+.bar-fill.warn{background:var(--warn)}.bar-fill.bad{background:var(--bad)}
+/* approximate app previews */
+.pv-title{font-size:.8rem;text-transform:uppercase;letter-spacing:.05em;color:var(--text-muted);font-weight:700;margin:18px 0 8px}
+.dc-pv{background:#313338;color:#dbdee1;border-radius:10px;padding:14px;font-family:system-ui,"Segoe UI",Roboto,sans-serif}
+.dc-row{display:flex;gap:10px;align-items:flex-start}
+.dc-av{width:38px;height:38px;border-radius:50%;background:#5865f2;flex-shrink:0}
+.dc-av.b{background:#3ba55d;width:28px;height:28px}
+.dc-head{display:flex;gap:8px;align-items:baseline;flex-wrap:wrap}
+.dc-name{font-weight:600;color:#fff;overflow-wrap:anywhere}
+.dc-time{font-size:.72rem;color:#949ba4}
+.dc-msg{font-size:.95rem;margin-top:2px}
+.dc-mem{margin-top:12px;padding-top:10px;border-top:1px solid #3f4147;display:flex;gap:10px;align-items:center}
+.ig-pv{background:#000;color:#f5f5f5;border:1px solid #262626;border-radius:14px;padding:16px;max-width:380px;margin:0 auto}
+.ig-top{display:flex;gap:14px;align-items:center;margin-bottom:10px}
+.ig-av{width:62px;height:62px;border-radius:50%;background:linear-gradient(135deg,#f58529,#dd2a7b,#8134af);flex-shrink:0}
+.ig-user{font-size:.85rem;color:#a8a8a8}
+.ig-name{font-weight:700;font-size:.95rem;overflow-wrap:anywhere}
+.ig-bio{font-size:.9rem;line-height:1.4;white-space:pre-wrap;overflow-wrap:anywhere;margin-top:4px}
+.wa-pv{background:#0b141a;border-radius:10px;padding:16px;font-family:system-ui,"Segoe UI",Roboto,sans-serif}
+.wa-bubble{background:#005c4b;color:#e9edef;border-radius:10px 10px 2px 10px;padding:9px 12px;max-width:100%;margin-left:auto;font-size:.95rem;line-height:1.45;overflow-wrap:anywhere;width:fit-content}
+.wa-bubble .ln{white-space:pre-wrap;min-height:1.2em}
+.wa-bubble strong{font-weight:700;color:#fff}
+.wa-bubble .wa-mono{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.9em}
+.wa-bubble .wa-code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.9em;background:rgba(255,255,255,.12);border-radius:4px;padding:0 4px}
+.wa-bubble .wa-q{border-left:3px solid #06cf9c;padding-left:8px;background:rgba(0,0,0,.18);border-radius:3px}
+.wa-bubble .wa-li{display:flex;gap:8px}
+.wa-bubble .wa-li .mk{flex-shrink:0;min-width:1.2em}
+.toolbar{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0}
+.toolbar button{background:#1f2937;color:#fff;border:1px solid var(--border-color);border-radius:8px;padding:8px 12px;font-size:.85rem;font-weight:700;cursor:pointer}
+.toolbar button:hover{border-color:var(--accent-blue)}
+.sympad{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0 10px}
+.sympad button{background:var(--bg-primary);color:#fff;border:1px solid var(--border-color);border-radius:8px;min-width:40px;height:40px;font-size:1.15rem;cursor:pointer}
+.sympad button:hover{border-color:var(--accent-purple)}
+.hint{color:var(--text-muted);font-size:.85rem;margin:4px 0 0}
+.status{font-size:.92rem;margin-top:10px;line-height:1.6;color:var(--text-muted)}
+.status.ok{color:var(--ok)}.status.bad{color:var(--bad)}
+.legend{font-size:.8rem;color:var(--text-muted);margin:8px 0 0}
+/* sidebar + footer (same as the rest of the site) */
+.sidebar-toggle{position:fixed;top:15px;left:15px;z-index:1001;background:var(--bg-secondary);border:1px solid var(--border-color);color:var(--text-main);width:44px;height:44px;border-radius:8px;cursor:pointer;font-size:1.3rem;display:flex;align-items:center;justify-content:center}
+.sidebar-overlay{position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:999;display:none}
+.sidebar-overlay.open{display:block}
+.sidebar{position:fixed;top:0;left:-260px;width:240px;height:100%;background:var(--bg-secondary);border-right:1px solid var(--border-color);z-index:1000;padding:70px 20px 20px;transition:left .3s ease,visibility 0s linear .3s;overflow-y:auto;visibility:hidden}
+.sidebar.open{left:0;visibility:visible;transition:left .3s ease}
+.sidebar .sidebar-heading{display:block;color:var(--text-muted);font-size:.8rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;margin-bottom:10px}
+.sidebar a{display:block;color:var(--text-muted);text-decoration:none;padding:10px 0;font-size:.95rem;border-bottom:1px solid rgba(255,255,255,.05)}
+.sidebar a:hover{color:var(--accent-blue)}
+.sidebar details.sidebar-group{border-bottom:1px solid rgba(255,255,255,.05)}
+.sidebar summary{list-style:none;cursor:pointer;color:var(--text-muted);padding:10px 0;font-size:.95rem;display:flex;justify-content:space-between;align-items:center}
+.sidebar summary::-webkit-details-marker{display:none}
+.sidebar summary::after{content:"\25BE";transition:transform .2s}
+.sidebar details[open] summary::after{transform:rotate(180deg)}
+.sidebar summary:hover{color:var(--accent-blue)}
+.sidebar details a{padding-left:14px;font-size:.9rem}
+.sidebar details a:last-child{border-bottom:0}
+.sidebar a[aria-current=page]{color:#fff;font-weight:600}
+footer{background:var(--bg-secondary);border-top:1px solid var(--border-color);padding:25px 20px;text-align:center;font-size:.85rem;color:var(--text-muted)}
+footer a{color:var(--text-muted);text-decoration:none;margin:0 10px}
+footer a:hover{color:var(--accent-blue)}
+footer .footer-contact{margin-top:12px}
+footer .footer-contact a{margin:0;text-decoration:underline}
+</style>
+</head>
+<body>
+<button class="sidebar-toggle" onclick="toggleSidebar()" aria-label="Open navigation menu" aria-expanded="false" aria-controls="sideNav">☰</button>
+<div class="sidebar-overlay" id="sideOverlay" onclick="toggleSidebar(true)"></div>
+<nav class="sidebar" id="sideNav" aria-label="Site navigation">
+    <span class="sidebar-heading">Navigate</span>
+    <a href="./#tool">✨ Font Changer Tool</a>
+    <details class="sidebar-group" open>
+        <summary>🧰 More tools</summary>
+        <a href="discord-font-changer.html" aria-current="page">Discord Font Changer</a>
+        <a href="aesthetic-title-generator.html">Aesthetic Title Generator</a>
+        <a href="unicode-font-changer.html">Unicode Font Changer</a>
+        <a href="instagram-bio-fonts.html">Instagram Bio Fonts</a>
+        <a href="whatsapp-font-changer.html">WhatsApp Font Changer</a>
+    </details>
+    <a href="./#about">📖 About This Tool</a>
+    <a href="./#how-to-use">🧭 How To Use</a>
+    <a href="./#styles">🔤 Font Styles</a>
+    <a href="./#platforms">📲 Instagram, TikTok &amp; More</a>
+    <a href="./#faq">❓ FAQs</a>
+    <a href="blog.html">📰 Blog: Change Fonts Guide</a>
+    <span class="sidebar-heading" style="margin-top:20px;">Legal</span>
+    <a href="privacy.html">🔒 Privacy Policy</a>
+    <a href="terms.html">📄 Terms of Service</a>
+    <a href="dmca.html">⚖️ DMCA</a>
+    <span class="sidebar-heading" style="margin-top:20px;">More From Us</span>
+    <a href="https://waqastechfinds.github.io/" target="_blank" rel="noopener">📅 The Clarity Planner</a>
+    <a href="https://waqastechfinds.blogspot.com/" target="_blank" rel="noopener">📱 Tech Finds Blog</a>
+</nav>
+
+<main class="wrap">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="./">Font Craft</a> › Discord Font Changer</nav>
+
+    <header class="hero">
+        <h1>Discord Font Changer</h1>
+        <p class="subtitle">Fancy text for your display name, nickname and messages, with a live preview, the 32-character limit and a username checker.</p>
+        <p class="byline">By <strong>Waqas Tech Finds</strong> · Updated <time datetime="2026-10-14">October 14, 2026</time></p>
+    </header>
+
+    <div class="answer-box"><strong>Quick answer:</strong> Discord has no setting to change its font, and the app uses its own typeface. What you can change is the <strong>text you paste</strong>: display names, server nicknames, About Me, custom status and messages can all use styled Unicode text. The unique username cannot. Type your name above, press Copy and paste it into Discord.</div>
+
+    <section class="panel" id="tool" aria-labelledby="tool-h">
+        <h2 class="sec-title" id="tool-h">Discord Name Studio</h2>
+        <label for="dcText">Your name or text</label>
+        <input type="text" id="dcText" maxlength="100" value="Night Raven" autocomplete="off" spellcheck="false">
+        <div class="badges" aria-live="polite">
+            <span class="badge" id="dcCount">0 / 32</span>
+            <span class="badge" id="dcFit">Display name limit: 32 characters</span>
+        </div>
+        <div class="out-list" id="dcList"></div>
+
+        <div class="pv-title">Preview (approximate)</div>
+        <div class="dc-pv" aria-label="Approximate preview of a Discord message">
+            <div class="dc-row">
+                <span class="dc-av" aria-hidden="true"></span>
+                <div>
+                    <div class="dc-head"><span class="dc-name" id="dcPvName">Night Raven</span><span class="dc-time">Today at 9:41 PM</span></div>
+                    <div class="dc-msg">gg everyone, lobby is open</div>
+                </div>
+            </div>
+            <div class="dc-mem"><span class="dc-av b" aria-hidden="true"></span><span class="dc-name" id="dcPvMem">Night Raven</span></div>
+        </div>
+        <p class="note">The preview uses Discord-like colors but is not the real app. Fonts and spacing can look slightly different on your device.</p>
+    </section>
+
+    <section class="panel" aria-labelledby="user-h">
+        <h2 class="sec-title" id="user-h">Discord Username Checker</h2>
+        <p class="note" style="margin-top:0">Your <strong>username</strong> is the unique handle and it cannot use fancy fonts. Test the characters before you try to save it.</p>
+        <label for="dcUser">Try a username</label>
+        <input type="text" id="dcUser" maxlength="64" value="night_raven" autocomplete="off" spellcheck="false">
+        <p class="status" id="dcUserResult" role="status"></p>
+        <p class="note">This only checks the character rules. It cannot tell you whether the name is already taken.</p>
+    </section>
+
+    <div class="content">
+        <h2 id="app-font">Can You Change Discord's Font?</h2>
+        <p>Not officially. Discord uses its own font, called gg sans, across the whole app, and there is no font picker in the settings. People searching for a "Discord font changer" usually want one of two things, and they are different:</p>
+        <ul>
+            <li><strong>Change how the app looks.</strong> You cannot swap the app font. You can make chat text bigger or smaller with <strong>Chat Font Scaling</strong> in the Accessibility settings, and you can show text in a fixed-width font by putting it in a code block.</li>
+            <li><strong>Change how your name or message looks.</strong> This is what the tool above does. It swaps normal letters for look-alike Unicode symbols, so the text keeps its style wherever you paste it.</li>
+        </ul>
+        <p>You may see guides that use mods such as BetterDiscord to replace the app font. Those change the Discord client itself, and Discord's rules do not allow modifying the client, so using them puts your account at risk. Styled Unicode text needs no mods and nothing to install.</p>
+
+        <h2 id="where">Where Styled Text Works on Discord</h2>
+        <div class="tbl-wrap"><table>
+            <thead><tr><th>Place</th><th>Fancy text?</th><th>Notes</th></tr></thead>
+            <tbody>
+                <tr><td><strong>Display name</strong></td><td>Yes</td><td>1 to 32 characters. Special characters and emoji are allowed.</td></tr>
+                <tr><td><strong>Server nickname</strong></td><td>Yes</td><td>Replaces your display name in that one server.</td></tr>
+                <tr><td><strong>About Me, custom status</strong></td><td>Yes</td><td>Plain text fields, so Unicode styles paste in fine.</td></tr>
+                <tr><td><strong>Messages</strong></td><td>Yes</td><td>Works anywhere, and you can combine it with Discord's own formatting.</td></tr>
+                <tr><td><strong>Server and role names</strong></td><td>Yes</td><td>Useful for headings and rank titles. Keep them readable.</td></tr>
+                <tr><td><strong>Text channel names</strong></td><td>Partly</td><td>Discord lowercases and hyphenates them, so styled letters may not stay. Test one channel first.</td></tr>
+                <tr><td><strong>Username</strong></td><td>No</td><td>Only a-z, 0-9, underscore and period. See the checker above.</td></tr>
+            </tbody>
+        </table></div>
+
+        <h2 id="username">Username vs Display Name</h2>
+        <p>Discord splits your identity into two names. The <strong>username</strong> is your unique handle: 2 to 32 characters, using lowercase Latin letters, numbers, underscores and periods, and never two periods in a row. The <strong>display name</strong> is what people see next to your messages, and it can be almost anything within Discord's Community Guidelines, including spaces, symbols and emoji, up to 32 characters.</p>
+        <p>That is why the fancy style belongs in the display name. When friends search to mention you, Discord matches your display name or your username, so a plain, simple username keeps you easy to find even with a decorative display name.</p>
+
+        <h2 id="styles-discord">Which Style Looks Best on Discord</h2>
+        <div class="example-grid">
+            <div class="example"><span class="out-label">Easiest to read</span><span class="sample" data-style="sansBold">Night Raven</span><p class="note">Bold styles stay clear in the member list.</p></div>
+            <div class="example"><span class="out-label">Server and role titles</span><span class="sample" data-style="boldGothic">Night Raven</span><p class="note">Gothic suits dark themes and clan names.</p></div>
+            <div class="example"><span class="out-label">Casual nicknames</span><span class="sample" data-style="bubbles">Night Raven</span><p class="note">Bubble letters feel playful.</p></div>
+            <div class="example"><span class="out-label">Subtle and tidy</span><span class="sample" data-style="smallCaps">Night Raven</span><p class="note">Small caps look closest to normal text.</p></div>
+        </div>
+
+        <h2 id="formatting">Discord's Own Text Formatting</h2>
+        <p>Inside messages, Discord can format text without Unicode. This works only in messages, not in names or your status.</p>
+        <div class="tbl-wrap"><table>
+            <thead><tr><th>You type</th><th>You get</th></tr></thead>
+            <tbody>
+                <tr><td><code>**text**</code></td><td>Bold</td></tr>
+                <tr><td><code>*text*</code></td><td>Italic</td></tr>
+                <tr><td><code>__text__</code></td><td>Underline</td></tr>
+                <tr><td><code>~~text~~</code></td><td>Strikethrough</td></tr>
+                <tr><td><code>||text||</code></td><td>Spoiler, hidden until clicked</td></tr>
+                <tr><td><code>`text`</code></td><td>Inline code in a fixed-width font</td></tr>
+            </tbody>
+        </table></div>
+
+        <h2 id="tips">Tips Before You Change Your Name</h2>
+        <ul>
+            <li><strong>Keep it readable.</strong> If friends cannot read your name in the member list, they will not recognize you.</li>
+            <li><strong>Do not copy staff or other people.</strong> Discord's rules do not allow impersonating staff, groups or individuals, and a lookalike name can get you reported.</li>
+            <li><strong>Preview on your phone.</strong> A style can look fine on a computer and show boxes on an older phone.</li>
+            <li><strong>Mind accessibility.</strong> Screen readers can read styled letters as odd symbols, so keep important information in plain text.</li>
+        </ul>
+
+        <h2 id="faq">Frequently Asked Questions</h2>
+        <div class="faq-item">
+            <div class="faq-q">Can I change Discord&#x27;s font?</div>
+            <p>Not officially. Discord uses its own font and has no font setting. You can scale chat text under Accessibility settings, and you can paste styled Unicode text into names and messages.</p>
+        </div>
+        <div class="faq-item">
+            <div class="faq-q">Can I use a fancy font in my Discord username?</div>
+            <p>No. The unique username only allows lowercase Latin letters, numbers, underscores and periods. Put the fancy style in your display name or server nickname.</p>
+        </div>
+        <div class="faq-item">
+            <div class="faq-q">How long can a Discord display name be?</div>
+            <p>A display name can be 1 to 32 characters long and can include special characters and emoji.</p>
+        </div>
+        <div class="faq-item">
+            <div class="faq-q">Why does my styled name show boxes?</div>
+            <p>The device or app has no symbol for that character. It is rare on modern phones, but if it happens, try Bold or Sans Bold.</p>
+        </div>
+        <div class="faq-item">
+            <div class="faq-q">Will other people see my styled name on mobile?</div>
+            <p>Yes. Styled text is ordinary Unicode text, so it shows on phones and computers that have the symbols. Very old devices may show boxes for a few styles.</p>
+        </div>
+
+        <div class="cta-box">
+            <p><strong>Want every style in one place?</strong></p>
+            <p>This page shows the styles and tools that matter most for Discord. The full Font Craft tool has all 15 font styles, a Title Framer and a Description Editor.</p>
+            <a class="cta" href="./#tool">Open the full Font Changer →</a>
+            <a class="cta alt" href="blog.html">Read the guide</a>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <a href="./">Home</a>
+    <a href="blog.html">Guide</a>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="terms.html">Terms of Service</a>
+    <a href="dmca.html">DMCA</a>
+    <a href="mailto:waqastechfinds@gmail.com">Contact Us</a>
+    <p class="footer-contact">Contact: <a href="mailto:waqastechfinds@gmail.com">waqastechfinds@gmail.com</a></p>
+    <p style="margin-top:12px;opacity:.7;">&copy; 2026 Waqas Tech Finds. All Rights Reserved.</p>
+</footer>
+
+<script>
+
+const $ = id => document.getElementById(id);
+const cpLen = s => Array.from(s).length;
+
+function toggleSidebar(forceClose) {
+    const nav = $('sideNav'), overlay = $('sideOverlay');
+    const toggleBtn = document.querySelector('.sidebar-toggle');
+    const willOpen = forceClose === true ? false : !nav.classList.contains('open');
+    nav.classList.toggle('open', willOpen);
+    overlay.classList.toggle('open', willOpen);
+    toggleBtn.setAttribute('aria-expanded', willOpen ? 'true' : 'false');
+    toggleBtn.setAttribute('aria-label', willOpen ? 'Close navigation menu' : 'Open navigation menu');
+    if (willOpen) { const first = nav.querySelector('a'); if (first) first.focus(); }
+    else if (nav.contains(document.activeElement)) { toggleBtn.focus(); }
+}
+document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && $('sideNav').classList.contains('open')) toggleSidebar(true);
+});
+
+function buildMap(upperStart, lowerStart, digitStart, exceptions) {
+    const dict = {};
+    for (let i = 0; i < 26; i++) {
+        const up = String.fromCharCode(65 + i), low = String.fromCharCode(97 + i);
+        if (upperStart !== null) dict[up] = (exceptions && exceptions[up]) || String.fromCodePoint(upperStart + i);
+        if (lowerStart !== null) dict[low] = (exceptions && exceptions[low]) || String.fromCodePoint(lowerStart + i);
+    }
+    if (digitStart !== null) { for (let i = 0; i < 10; i++) dict[String(i)] = String.fromCodePoint(digitStart + i); }
+    return dict;
+}
+function buildBubbles() {
+    const dict = buildMap(0x24B6, 0x24D0, null);
+    dict['0'] = '\u24EA';
+    for (let i = 1; i <= 9; i++) dict[String(i)] = String.fromCodePoint(0x2460 + i - 1);
+    return dict;
+}
+function buildSmallCaps() {
+    const from = 'abcdefghijklmnopqrstuvwxyz';
+    const to = Array.from('\u1D00\u0299\u1D04\u1D05\u1D07\uA730\u0262\u029C\u026A\u1D0A\u1D0B\u029F\u1D0D\u0274\u1D0F\u1D18\u01EB\u0280\uA731\u1D1B\u1D1C\u1D20\u1D21x\u028F\u1D22');
+    const dict = {};
+    for (let i = 0; i < 26; i++) { dict[from[i]] = to[i]; dict[from[i].toUpperCase()] = to[i]; }
+    return dict;
+}
+const maps = {
+    script: buildMap(0x1D49C, 0x1D4B6, null, { B: '\u212C', E: '\u2130', F: '\u2131', H: '\u210B', I: '\u2110', L: '\u2112', M: '\u2133', R: '\u211B', e: '\u212F', g: '\u210A', o: '\u2134' }),
+    boldScript: buildMap(0x1D4D0, 0x1D4EA, null),
+    gothic: buildMap(0x1D504, 0x1D51E, null, { C: '\u212D', H: '\u210C', I: '\u2111', R: '\u211C', Z: '\u2128' }),
+    boldGothic: buildMap(0x1D56C, 0x1D586, null),
+    boldItalic: buildMap(0x1D468, 0x1D482, null),
+    italic: buildMap(0x1D434, 0x1D44E, null, { h: '\u210E' }),
+    bold: buildMap(0x1D400, 0x1D41A, 0x1D7CE),
+    sansBold: buildMap(0x1D5D4, 0x1D5EE, 0x1D7EC),
+    doubleStruck: buildMap(0x1D538, 0x1D552, 0x1D7D8, { C: '\u2102', H: '\u210D', N: '\u2115', P: '\u2119', Q: '\u211A', R: '\u211D', Z: '\u2124' }),
+    mono: buildMap(0x1D670, 0x1D68A, 0x1D7F6),
+    bubbles: buildBubbles(),
+    squares: buildMap(0x1F130, 0x1F130, null),
+    smallCaps: buildSmallCaps(),
+    fullwidth: buildMap(0xFF21, 0xFF41, 0xFF10)
+};
+function mapConverter(str, dict) {
+    return Array.from(str).map(c => (dict[c] !== undefined ? dict[c] : c)).join('');
+}
+const STYLE_LIST = [
+    { key: 'script', title: 'Script', fn: t => mapConverter(t, maps.script) },
+    { key: 'boldScript', title: 'Bold Script', fn: t => mapConverter(t, maps.boldScript) },
+    { key: 'gothic', title: 'Gothic', fn: t => mapConverter(t, maps.gothic) },
+    { key: 'boldGothic', title: 'Bold Gothic', fn: t => mapConverter(t, maps.boldGothic) },
+    { key: 'boldItalic', title: 'Bold Italic', fn: t => mapConverter(t, maps.boldItalic) },
+    { key: 'italic', title: 'Italic', fn: t => mapConverter(t, maps.italic) },
+    { key: 'bold', title: 'Bold', fn: t => mapConverter(t, maps.bold) },
+    { key: 'sansBold', title: 'Sans Bold', fn: t => mapConverter(t, maps.sansBold) },
+    { key: 'doubleStruck', title: 'Double-Struck', fn: t => mapConverter(t, maps.doubleStruck) },
+    { key: 'mono', title: 'Monospace', fn: t => mapConverter(t, maps.mono) },
+    { key: 'bubbles', title: 'Bubble', fn: t => mapConverter(t, maps.bubbles) },
+    { key: 'squares', title: 'Squares', fn: t => mapConverter(t, maps.squares) },
+    { key: 'smallCaps', title: 'Small Caps', fn: t => mapConverter(t, maps.smallCaps) },
+    { key: 'fullwidth', title: 'Fullwidth', fn: t => mapConverter(t, maps.fullwidth) },
+    { key: 'vaporwave', title: 'Vaporwave Spacing', fn: t => Array.from(t).join(' ') }
+];
+const STYLE_BY_KEY = {};
+STYLE_LIST.forEach(s => { STYLE_BY_KEY[s.key] = s; });
+function styleText(key, text) {
+    const s = STYLE_BY_KEY[key];
+    return s ? s.fn(text) : text;
+}
+
+function legacyCopy(text) {
+    return new Promise((resolve, reject) => {
+        const ta = document.createElement('textarea');
+        ta.value = text; ta.setAttribute('readonly', '');
+        ta.style.position = 'fixed'; ta.style.top = '0'; ta.style.left = '-9999px'; ta.style.opacity = '0';
+        document.body.appendChild(ta);
+        ta.focus(); ta.select(); ta.setSelectionRange(0, text.length);
+        let ok = false;
+        try { ok = document.execCommand('copy'); } catch (e) { ok = false; }
+        document.body.removeChild(ta);
+        if (ok) resolve(); else reject(new Error('copy failed'));
+    });
+}
+function copyToClipboard(text) {
+    if (navigator.clipboard && window.isSecureContext) {
+        return navigator.clipboard.writeText(text).catch(() => legacyCopy(text));
+    }
+    return legacyCopy(text);
+}
+function copyWithFeedback(text, btn, label) {
+    const original = label || 'Copy';
+    copyToClipboard(text).then(() => {
+        btn.textContent = 'Copied!'; btn.classList.add('done');
+        setTimeout(() => { btn.textContent = original; btn.classList.remove('done'); }, 1200);
+    }).catch(() => {
+        btn.textContent = 'Copy failed';
+        setTimeout(() => { btn.textContent = original; }, 1500);
+    });
+}
+function el(tag, cls, text) {
+    const n = document.createElement(tag);
+    if (cls) n.className = cls;
+    if (text !== undefined) n.textContent = text;
+    return n;
+}
+function fillSamples() {
+    document.querySelectorAll('[data-style]').forEach(n => {
+        const s = STYLE_BY_KEY[n.getAttribute('data-style')];
+        if (s) n.textContent = s.fn(n.textContent);
+    });
+}
+
+
+let dcSel = 'sansBold';
+const dcRows = [];
+(function initDiscord() {
+    const list = $('dcList');
+    STYLE_LIST.forEach(s => {
+        const row = el('div', 'out-item');
+        const main = el('div', 'out-main');
+        main.appendChild(el('span', 'out-label', s.title));
+        const out = el('span', 'out-text');
+        main.appendChild(out);
+        const actions = el('div', 'out-actions');
+        const pv = el('button', 'btn-ghost', 'Preview');
+        pv.type = 'button';
+        pv.setAttribute('aria-pressed', 'false');
+        pv.setAttribute('aria-label', 'Preview ' + s.title + ' in the Discord preview');
+        pv.addEventListener('click', () => { dcSel = s.key; dcRender(); });
+        const cp = el('button', 'btn-copy', 'Copy');
+        cp.type = 'button';
+        cp.setAttribute('aria-label', 'Copy ' + s.title + ' text');
+        cp.addEventListener('click', () => copyWithFeedback(out.textContent, cp));
+        actions.appendChild(pv); actions.appendChild(cp);
+        row.appendChild(main); row.appendChild(actions);
+        list.appendChild(row);
+        dcRows.push({ key: s.key, row: row, out: out, pv: pv });
+    });
+})();
+
+function dcRender() {
+    const raw = $('dcText').value;
+    const text = raw.trim() === '' ? 'Night Raven' : raw;
+    const n = cpLen(text);
+    const count = $('dcCount'), fit = $('dcFit');
+    count.textContent = n + ' / 32';
+    if (n <= 32) { count.className = 'badge ok'; fit.className = 'badge ok'; fit.textContent = 'Fits a display name or nickname'; }
+    else { count.className = 'badge bad'; fit.className = 'badge bad'; fit.textContent = 'Over 32 characters: shorten it'; }
+    dcRows.forEach(r => {
+        const styled = styleText(r.key, text);
+        r.out.textContent = styled;
+        const on = r.key === dcSel;
+        r.pv.setAttribute('aria-pressed', on ? 'true' : 'false');
+        r.row.className = on ? 'out-item sel' : 'out-item';
+        if (on) { $('dcPvName').textContent = styled; $('dcPvMem').textContent = styled; }
+    });
+}
+
+function dcCheckUser() {
+    const v = $('dcUser').value;
+    const res = $('dcUserResult');
+    const problems = [];
+    const n = cpLen(v);
+    if (n < 2) problems.push('It must be at least 2 characters long.');
+    if (n > 32) problems.push('It must be 32 characters or fewer.');
+    if (/[A-Z]/.test(v)) problems.push('Use lowercase letters only.');
+    if (/\s/.test(v)) problems.push('Spaces are not allowed.');
+    const bad = Array.from(v).filter(c => !/[a-z0-9_.A-Z\s]/.test(c));
+    if (bad.length) problems.push('These characters are not allowed: ' + Array.from(new Set(bad)).join(' ') + ' (fancy letters and symbols belong in the display name).');
+    if (v.indexOf('..') !== -1) problems.push('You cannot use two periods in a row.');
+    if (problems.length === 0) { res.className = 'status ok'; res.textContent = 'This follows Discord\'s username character rules. It may still be taken.'; }
+    else { res.className = 'status bad'; res.textContent = problems.join(' '); }
+}
+
+$('dcText').addEventListener('input', dcRender);
+$('dcUser').addEventListener('input', dcCheckUser);
+dcRender();
+dcCheckUser();
+fillSamples();
+
+</script>
+</body>
+</html>
